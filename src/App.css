@@ -1,0 +1,10 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+  }
+  
+  /* Thumb da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0); /* Cor de fundo do thumb */
+  }
+  
