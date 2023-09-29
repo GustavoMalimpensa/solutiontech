@@ -17,8 +17,8 @@ const HomePage = () => {
             <canvas id="demo-canvas"></canvas>
             <div className='header'>
               <div className='justify-center flex items-center my-[5rem] lg:gap-1 md:gap-2 gap-6 flex-col text-5xl font-bold'>
-                <h1 data-aos="zoom-in" className='font-extrabold text-center text-transparent lg:text-7xl md:text-5xl text-4xl bg-clip-text bg-gradient-to-r from-blue-400 to-sky-600'>Seja Líder de Mercado!</h1>
-                <h1  className='font-bold text-center text-transparent lg:text-4xl md:text-3xl text-3xl mx-5 bg-clip-text bg-gradient-to-b from-gray-300 to-gray-300 my-3'> Transforme seu negócio com recursos modernos e práticos.</h1>
+                <h1 data-aos="zoom-in" className='font-extrabold text-center text-transparent lg:text-7xl md:text-5xl text-4xl bg-clip-text bg-gradient-to-r from-white to-white'>Seja Líder de Mercado!</h1>
+                <h1  className='font-bold text-center text-transparent lg:text-4xl md:text-3xl text-3xl mx-5 bg-clip-text bg-gradient-to-b from-gray-300 to-gray-100 my-3'> Transforme seu negócio com recursos modernos e práticos.</h1>
               </div>
             </div>
           </div>
