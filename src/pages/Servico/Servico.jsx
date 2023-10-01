@@ -9,8 +9,7 @@ import backgroundImg14 from '../../assets/images/datascience.png'
 import backgroundImg15 from '../../assets/images/e-mail.png'
 import backgroundImg16 from '../../assets/images/lupa.png'
 import backgroundImg17 from '../../assets/images/maleta.png'
-
-
+import HeaderAnimation from '../../components/Globe/HeaderAnimation';
 
 const Servico = () => {
   document.title = 'Solucions Tech | Serviços';
@@ -93,12 +92,24 @@ const Servico = () => {
 
   return (
     <div className='pt-16'>
-      <Heading  className='flex justify-center items-center' heading="O que podemos fazer por você?" description="Somos uma agência digital especializada em desenvolver soluções tecnológicas inteligentes, temos como objetivo usar nossos serviços para ajudar empresas a crescerem e atingirem seus objetivos. Venha ser nosso parceiro!"></Heading>
-      <div className='my-20 mx-5 flex flex-wrap gap-10 items-center justify-center' id='Servico_main'>
-        {servicos.map((servico, id ) => (
-          <ServicoCard icon={<BsCheck className='text-sky-500' size={30} />} servico={servico} key={id}/>
-        ))}
-      </div>
+      <main className="bg-thegray home-no-scroll">
+        <div className="absolute flex justify-center  globe-position">
+            <HeaderAnimation /> 
+        </div>
+        <div className="relative z-10 pt-0 pb-20">
+          {/*Main content / Hero section */}
+          <div className="HomeContainer">
+            <div className='pt-16'>
+              <Heading  className='flex justify-center items-center' heading="O que podemos fazer por você?" description="Somos uma agência digital especializada em desenvolver soluções tecnológicas inteligentes, temos como objetivo usar nossos serviços para ajudar empresas a crescerem e atingirem seus objetivos. Venha ser nosso parceiro!"></Heading>
+              <div className='my-20 mx-5 flex flex-wrap gap-10 items-center justify-center' id='Servico_main'>
+                {servicos.map((servico, id ) => (
+                  <ServicoCard icon={<BsCheck className='text-sky-500' size={30} />} servico={servico} key={id}/>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   )
 }

@@ -3,14 +3,14 @@ import './HomePage.scss'
 import Sobre from '../../components/HomePage/Sobre';
 import Perguntas from '../../components/HomePage/Perguntas';
 import Servicos from '../../components/HomePage/Servicos';
-import HeaderAnimation from './HeaderAnimation';
+import HeaderAnimation from '../../components/Globe/HeaderAnimation';
 
 const HomePage = () => {
   document.title = 'Solucion Tech | Home';
 
   return (
     <div>
-      <div className="demo-1 font-bold">
+      <div className="pt-20 font-bold">
         <div className="content">
           <div id="large-header" className="large-header">
            <HeaderAnimation />

@@ -32,20 +32,20 @@ const Sobre = () => {
     }
 ]
 
-  /* 
-  <div className='my-10 mt-20 '>
-    <Heading1 details={"Bem-vindo à Solucion Tech, a parceira ideal para impulsionar seu negócio! Nossa softhouse oferece soluções tecnológicas personalizadas para microempresários."} text1={"Na Solucions Tech"} text2={"Contruimos Sonhos"} />
-    <div className=' my-32 flex flex-wrap gap-10 items-center justify-evenly'>
-      <EstasticasCard icon={<BsFillPeopleFill className='text-sky-500' size={30} />} type={"Sonhos realizados"} data={6} />
-      <EstasticasCard icon={<BsFillCalendarEventFill className='text-sky-500' size={30} />} type={"Sonhos sendo realizados"} data={3} />
-      <EstasticasCard icon={<AiFillProject className='text-sky-500' size={30} />} type={"Cidades"} data={3} />
-    </div>
-  </div>
-  */
-
   return (
+
     <div >
-       <div className='my-10'>
+      {/*
+      <div className='my-10 mt-20 '>
+        <Heading1 details={"Bem-vindo à Solucion Tech, a parceira ideal para impulsionar seu negócio! Nossa softhouse oferece soluções tecnológicas personalizadas para microempresários."} text1={"Na Solucions Tech"} text2={"Contruimos Sonhos"} />
+        <div className=' my-32 flex flex-wrap gap-10 items-center justify-evenly'>
+          <EstasticasCard icon={<BsFillPeopleFill className='text-sky-500' size={30} />} type={"Sonhos realizados"} data={6} />
+          <EstasticasCard icon={<BsFillCalendarEventFill className='text-sky-500' size={30} />} type={"Sonhos sendo realizados"} data={3} />
+          <EstasticasCard icon={<AiFillProject className='text-sky-500' size={30} />} type={"Cidades"} data={3} />
+        </div>
+      </div>
+      */}
+      <div className='my-10'>
        <Heading1 details={"Entenda a importância de simplificar a sua jornada de microempreendedor."} text1={"Entenda as"} text2={" Vantangens"}  />
       </div>
       <div className='my-10 flex flex-wrap gap-10 items-center justify-evenly'>
