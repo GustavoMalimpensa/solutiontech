@@ -28,7 +28,8 @@ const NavBar = () => {
                      <img data-aos="fade-up" src={backgroundImg2} className='h-[3rem] ' alt="electric" />
                         <h1
                             data-aos="zoom-in"
-                            className="hidden md:block lg:block font-extrabold text-left text-transparent md:text-3xl text-xs bg-clip-text bg-gradient-to-r from-blue-300 to-sky-500 h-8"
+                            className="hidden mx-2 md:block lg:block font-extrabold text-left text-transparent md:text-3xl text-xs bg-clip-text bg-gradient-to-r from-sky-500 to-sky-500 h-8"
+
                         >Solucions Tech
                         </h1>
                     </Link>
