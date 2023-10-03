@@ -1,7 +1,7 @@
 import React from 'react'
 import './ServicoStyle.scss'
 import Heading from '../../components/Headings/Heading'
-import ServicoCard from './ServicoCard'
+import ServicoCard from './Cards/ServicoCard'
 import { BsCheck } from 'react-icons/bs'
 import backgroundImg12 from '../../assets/images/terra.png' 
 import backgroundImg13 from '../../assets/images/lista.png'
@@ -43,7 +43,7 @@ const Servico = () => {
       name: 'Data Science',
       image: backgroundImg14,
       about: "Um campo que utiliza técnicas e algoritmos para coletar, analisar e interpretar grandes volumes de dados, fornecendo insights valiosos e tomadas de decisões.", 
-      value: "/Serviços/datascience",
+      value: "/Contato",
       icon1: "Favorece o marketing",
       icon2: "Previsão de demandas",
       icon3: "Aperfeiçoar tomadas de decisões",
@@ -55,7 +55,7 @@ const Servico = () => {
       name: 'E-mail Corporativo',
       image: backgroundImg15,
       about: "Tenha um email próprio para o seu negócio, transmita confiança para os seus clientes enviando emails com a sua marca email@suaempresa.com.br.", 
-      value: "/Serviços/email",
+      value: "/Contato",
       icon1: "Domínio",
       icon2: "Hospedagem",
       icon3: "Configuração",
@@ -79,7 +79,7 @@ const Servico = () => {
       name: 'Consultoria em T.I',
       image: backgroundImg17,
       about: "Estamos aqui para ajudá-lo a lidar com o mundo da tecnologia que as vezes parece muito complicado. Vamos descomplicar, deixe com a gente!", 
-      value: "/Serviços/consultoria",
+      value: "/Contato",
       icon1: "Para Empresas",
       icon2: "Governança de TI",
       icon3: "Gestão de TI",

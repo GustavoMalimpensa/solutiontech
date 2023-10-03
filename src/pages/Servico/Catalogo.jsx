@@ -5,7 +5,7 @@ import backgroundImg12 from '../../assets/images/terra.png'
 import backgroundImg13 from '../../assets/images/lista.png'
 import backgroundImg14 from '../../assets/images/datascience.png'
 import HeaderAnimation from '../../components/Globe/HeaderAnimation';
-import CatalogoCard from "./CatalogoCard";
+import CatalogoCard from "./Cards/CatalogoCard";
 
 const Catalogo = () => {
 
@@ -30,8 +30,8 @@ const Catalogo = () => {
           name: 'Cátalogo médio (Dínamico)',
           image: backgroundImg13,
           about: "Uma plataforma digital que organiza, apresenta e facilita a compra de produtos de uma empresa, melhorando a visibilidade e acessibilidade dos produtos aos clientes.", 
-          value: "12x99,90",
-          value2: "1.000,00",
+          value: "12x119,90",
+          value2: "1.199,00",
           icon1: "Hospedagem",
           icon2: "Dóminio proprio",
           icon3: "Compra pelo whatsapp",
@@ -44,8 +44,8 @@ const Catalogo = () => {
           name: 'Cátalogo Avançado',
           image: backgroundImg14,
           about: "Um campo que utiliza técnicas e algoritmos para coletar, analisar e interpretar grandes volumes de dados, fornecendo insights valiosos e tomadas de decisões.", 
-          value: "12x129.90",
-          value2: "1.290,00",
+          value: "12x179.90",
+          value2: "1.790,00",
           icon1: "Hospedagem",
           icon2: "Dóminio personalizado",
           icon3: "Compra pelo whatsapp",

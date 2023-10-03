@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './utils/Layout';
 import { HomePage,  Contato, Error } from './pages/index'
-import { Servico, Sites, Catalogo, Otimizacao, Consultoria, Email, Datascience} from './pages/index';
+import { Servico, Sites, Catalogo, Otimizacao } from './pages/index';
 import ScrollToTop from './hooks/useScrollToTop';
 import BigTech from './pages/About/Bigtech';
 
@@ -48,6 +48,8 @@ function App() {
             <Otimizacao />
           </Layout>
         } />
+
+        {/*Main content
         <Route path="/Serviços/consultoria" element={
           <Layout>
             <Consultoria />
@@ -63,6 +65,7 @@ function App() {
             <Datascience />
           </Layout>
         } />
+         / Hero section */}
 
 
          <Route path="/Big-Tech" element={

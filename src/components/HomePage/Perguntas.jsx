@@ -38,7 +38,7 @@ const Perguntas = () => {
 const PerguntasCard = ({ data }) => {
     const [show, setShow] = useState(false);
     return (
-        <div data-aos="fade-up" className='flex lg:w-[80%] md:w-[80%] w-[95%] transition-all delay-[15ms] ease-in-out  bg-[#0a0a0a] border-gray-800 hover:border-gray-700 border lg:p-5 md:p-5 p-3 rounded-2xl gap-0 flex-col'>
+        <div data-aos="fade-up" className='flex lg:w-[80%] md:w-[80%] w-[95%] transition-all delay-[15ms] ease-in-out  bg-[#0a1123] border-gray-800 hover:border-gray-700 border lg:p-5 md:p-5 p-3 gap-0 flex-col'>
             <div onClick={()=>setShow((show)=>!show)} className='flex justify-between items-center cursor-pointer'>
                 <h3 className='font-semibold lg:text-lg md:text-lg text-base pr-5'>
                     {data.question}

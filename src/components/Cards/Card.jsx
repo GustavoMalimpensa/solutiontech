@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 const Vantagens = ({title,description,image}) => {
     return (
         <div data-aos="zoom-in" className='w-fit'>
-            <div className='border-[1px]  border-gray-800 hover:border-gray-700 rounded-2xl w-[21rem] p-5 hover:scale-[102%] z-0 hover:z-10 bg-[#0a0a0a] transition-all delay-[30ms] ease-in-out'>
+            <div className='border-[1px]  border-gray-800 hover:border-gray-700  w-[21rem] p-5 hover:scale-[102%] z-0 hover:z-10 bg-[#0a1123] transition-all delay-[30ms] ease-in-out'>
                 <div className='h-[10rem] rounded flex items-center justify-center overflow-hidden bg-green-500 mb-5'>
                     <img loading='lazy' className='w-auto h-[13rem] bg-cover bg-center' src={image} alt="about" />
                 </div>
@@ -23,9 +23,9 @@ const Vantagens = ({title,description,image}) => {
 
 const Card2 = ({ link, image, title, company }) => {
     return (
-        <div data-aos="zoom-in" className='rounded-2xl w-[21rem] p-5 hover:scale-[102%] z-0   transition-all delay-[30ms] ease-in-out'>
-            <a href={link} target='_blank' className='h-[10rem] flex items-center justify-center overflow-hidden bg-green-500 mb-5 rounded-xl'>
-                <img loading='lazy' className='w-auto h-[13rem] bg-cover bg-center rounded-lg' src={image} alt={title} />
+        <div data-aos="zoom-in" className=' w-[21rem] p-5 hover:scale-[102%] z-0  transition-all delay-[30ms] ease-in-out'>
+            <a href={link} target='_blank' className='h-[10rem] flex items-center justify-center overflow-hidden bg-green-500 mb-5 '>
+                <img loading='lazy' className='w-auto h-[13rem] bg-cover bg-center ' src={image} alt={title} />
             </a>
             <div className='text-center -mt-1'>
                 <h3 className='text-lg font-semibold'>{title}</h3>
@@ -37,10 +37,10 @@ const Card2 = ({ link, image, title, company }) => {
 
 const EventCard = ({ data }) => {
     return (
-        <div data-aos="zoom-in" className='w-[20rem] p-4 border-2 hover:border-gray-800 hover:scale-[102%] transition-all delay-75 ease-in border-gray-900 rounded-2xl mt-5'>
+        <div data-aos="zoom-in" className='w-[20rem] p-4 border-2 hover:border-gray-800 hover:scale-[102%] transition-all delay-75 ease-in border-gray-900  mt-5'>
             <div className='flex relative items-center h-44 overflow-hidden w-full rounded-lg border border-gray-900'>
                 <img className='w-full z-0' src={data.image} alt={data.name} />
-                <p className='py-1 absolute bottom-2 right-1 z-[5] px-3 rounded-full mt-2 text-sky-500 text-xs  bg-gray-900 w-fit bg-opacity-90'>{data.tag}</p>
+                <p className='py-1 absolute bottom-2 right-1 z-[5] px-3  mt-2 text-sky-500 text-xs  bg-gray-900 w-fit bg-opacity-90'>{data.tag}</p>
             </div>
             <h3 className='text-xl font-semibold pl-2 mt-2'>{data.name}</h3>
             <p className='text-gray-500 text-sm pt-1 pl-2'>{data.description.length > 100 ? data.description.substring(0, 90) + "..." : data.description}</p>

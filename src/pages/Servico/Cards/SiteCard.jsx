@@ -4,21 +4,48 @@ import { Link } from 'react-router-dom'
 const SitesCard = ({ site, icon }) => {
     return (
         
-        <div data-aos="zoom-in" className='border border-gray-800 bg-[#0f0e0e] hover:bg-[#131212] p-5 rounded-2xl transition-all delay-[30ms] ease-in-out hover:border-gray-700 hover:scale-[101%]  border-b-sky-700 hover:border-b-sky-500' id="site_main_1">
+        <div data-aos="zoom-in" className='border border-gray-800 bg-[#0a1123] hover:bg-[#0d1529] p-5 transition-all delay-[30ms] ease-in-out hover:border-gray-700 hover:scale-[101%]  border-b-sky-700 hover:border-b-sky-500' id="Servico_main_1">
             <div className='flex items-center justify-center my-3'>
                 <div>
                     <img className='rounded-full h-[6.7rem] w-[6.7rem]  border-2 border-[#121212] border-y-sky-500 border-r-sky-500 p-1' id='Team_img' src={site.image} alt={site.image}/>
                 </div>
             </div>
-        <div className='text-xl'>
+        <div className='text-teal-100 font-bold text-xl flex justify-center items-center'>
             {site.name}
         </div>
 
-        <div className='text-gray-400 my-3 text-sm text-left'>
-            {site.about}
+        <div className='flex justify-center items-center'>
+            <div className='text-teal-100 my-7 mx-2 text-sl'>
+                De
+            </div>
+            <div className='relative'>
+                <div className='text-teal-300 font-bold my-0 text-2xl relative z-10'>
+                {site.value3}
+                </div>
+                <div className='absolute w-full h-0.5 bg-teal-100 top-1/2 transform -translate-y-1/2 -rotate-6' />
+            </div>
+            <div className='text-teal-100 my-3 mx-2 text-sl'>
+                por
+            </div>
+        </div>
+
+
+        <div className='flex justify-center items-center'>
+
+            <div className='text-teal-100 mx-2 text-sl'>
+                12x 
+            </div>
+           
+            <div className='text-teal-300 font-bold my-0 text-4xl'>
+                {site.value}
+            </div>
+        </div>
+
+        <div className='flex justify-center items-center mb-6 text-teal-100 text-sm'>
+            à vista {site.value2}
         </div>
     
-        <div  className=' text-gray-400 text-sm'>
+        <div  className=' text-gray-400 text-sm font-bold'>
             <div className='flex text-gray-400 text-sm items-center'>
                 {icon}
                 <div className='ml-2'>
@@ -58,9 +85,9 @@ const SitesCard = ({ site, icon }) => {
         </div>
 
         <Link to="/contato">
-            <div className='py-3'>
-                <button href={`mailto:${site.value}`} className='border-sky-500 text-sky-500 border hover:bg-sky-500 px-8 py-2 rounded-full font-medium ease-in transition-all delay-[10ms] hover:text-white'>
-                   Entre em Contato
+            <div className='py-3 flex justify-center items-center'>
+                <button href={`mailto:${site.value}`} className='font-bold bg-emerald-500  border-emerald-500 houver:text-black text-black border hover:bg-teal-100 px-8 py-2 font-medium ease-in transition-all delay-[10ms] '>
+                   Entrar em contato
                 </button>
             </div>
         </Link>

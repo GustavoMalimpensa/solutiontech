@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ServicosCard = ({ servico, icon }) => {
     return (
-        <div data-aos="zoom-in" className='border border-gray-800 bg-[#0f0e0e] hover:bg-[#131212] p-5 rounded-2xl transition-all delay-[30ms] ease-in-out hover:border-gray-700 hover:scale-[101%]  border-b-sky-700 hover:border-b-sky-500' id="Servico_main_1">
+        <div data-aos="zoom-in" className='border border-gray-800 bg-[#0a1123] hover:bg-[#0d1529] p-5  transition-all delay-[30ms] ease-in-out hover:border-gray-700 hover:scale-[101%]  border-b-sky-700 hover:border-b-sky-500' id="Servico_main_1">
             
             <div className='flex items-center justify-center my-3'>
                 <div>
@@ -11,7 +11,7 @@ const ServicosCard = ({ servico, icon }) => {
                 </div>
             </div>
 
-            <div className='text-xl'>
+            <div className='text-xl font-bold'>
                 {servico.name}
             </div>
 
@@ -65,7 +65,7 @@ const ServicosCard = ({ servico, icon }) => {
 
             <Link to={servico.value}>
                 <div className='py-3'>
-                    <button href={`mailto:${servico.value}`} className='border-sky-500 text-sky-500 border hover:bg-sky-500 px-8 py-2 rounded-full font-medium ease-in transition-all delay-[10ms] hover:text-white'>
+                    <button href={`mailto:${servico.value}`} className='border-sky-500 text-sky-500 border hover:bg-sky-500 px-8 py-2  font-medium ease-in transition-all delay-[10ms] hover:text-white'>
                        Saiba mais ...
                     </button>
                 </div>

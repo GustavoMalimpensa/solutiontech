@@ -11,7 +11,7 @@ const ContatoCard = ({ title,description }) => {
     return (             
         
     <div data-aos="zoom-in" className='w-fit '>
-        <div className='border-[1px] border-gray-800 hover:border-gray-700 rounded-2xl w-[21rem] p-5 hover:scale-[102%] z-0 hover:z-10 bg-[#0a0a0a] transition-all delay-[30ms] ease-in-out'>
+        <div className='border-[1px] border-gray-800 hover:border-gray-700 w-[21rem] p-5 hover:scale-[102%] z-0 hover:z-10 bg-[#0a1123] transition-all delay-[30ms] ease-in-out'>
             <div data-aos="fade-up" className='w-[100%] md:w-[100%] lg:w-[100%] order-3 md:order-3 lg:order-3 text-base  pt-8'>
             <div className='flex items-center justify-start '>
                 <h1 className='font-extrabold text-2xl text-blue-700 mr-3'>|</h1>
@@ -32,8 +32,9 @@ const ContatoCard = ({ title,description }) => {
                 <FaFacebook className='transition ease-in delay-50 text-sky-500 visited:text-sky-500 hover:text-sky-600 hover:scale-[110%]' size={30} />
                 </a>
             </div> 
+            
             <div>
-                <h1 className='font-extrabold text-2xl text-black mr-3'>|</h1>
+                <h1 className='font-extrabold text-2xl text-blue-700 mr-3'>|</h1>
                 <h3 className='text-base font-semibold flex justify-center items-center text-sky-500'>{title}</h3>
                 <p className='text-gray-500 text-sm font-medium leading-5 mt-1'>
                     {
@@ -42,7 +43,7 @@ const ContatoCard = ({ title,description }) => {
                 </p>
             </div>
             <div className="flex justify-center pt-8 mb-8 ">
-                <button  onClick={handleClick} className="border-sky-500 text-sky-500 border hover:bg-green-500 px-8 py-2 rounded-full font-medium ease-in transition-all delay-[10ms] hover:text-white">
+                <button  onClick={handleClick} className="border-sky-500 text-sky-500 border hover:bg-green-500 px-8 py-2  font-medium ease-in transition-all delay-[10ms] hover:text-white">
                     Chamar no Whatsapp
                 </button>
             </div>
