@@ -10,12 +10,12 @@ const SitesCard = ({ site, icon }) => {
                     <img className='rounded-full h-[6.7rem] w-[6.7rem]  border-2 border-[#121212] border-y-sky-500 border-r-sky-500 p-1' id='Team_img' src={site.image} alt={site.image}/>
                 </div>
             </div>
-        <div className='text-teal-100 font-bold text-xl flex justify-center items-center'>
+        <div className='text-white font-bold text-xl flex justify-center items-center'>
             {site.name}
         </div>
 
         <div className='flex justify-center items-center'>
-            <div className='text-teal-100 my-7 mx-2 text-sl'>
+            <div className='text-white my-7 mx-2 text-sl'>
                 De
             </div>
             <div className='relative'>
@@ -24,7 +24,7 @@ const SitesCard = ({ site, icon }) => {
                 </div>
                 <div className='absolute w-full h-0.5 bg-teal-100 top-1/2 transform -translate-y-1/2 -rotate-6' />
             </div>
-            <div className='text-teal-100 my-3 mx-2 text-sl'>
+            <div className='text-white my-3 mx-2 text-sl'>
                 por
             </div>
         </div>
@@ -32,7 +32,7 @@ const SitesCard = ({ site, icon }) => {
 
         <div className='flex justify-center items-center'>
 
-            <div className='text-teal-100 mx-2 text-sl'>
+            <div className='text-white mx-2 text-sl'>
                 12x 
             </div>
            
@@ -41,42 +41,42 @@ const SitesCard = ({ site, icon }) => {
             </div>
         </div>
 
-        <div className='flex justify-center items-center mb-6 text-teal-100 text-sm'>
+        <div className='flex justify-center items-center mb-6 text-white text-sm'>
             à vista {site.value2}
         </div>
     
-        <div  className=' text-gray-400 text-sm font-bold'>
-            <div className='flex text-gray-400 text-sm items-center'>
+        <div  className=' text-white text-sm font-bold'>
+            <div className='flex text-white text-sm items-center'>
                 {icon}
                 <div className='ml-2'>
                     {site.icon1}
                 </div>
             </div>
-            <div className='flex text-gray-400 text-sm items-center'>
+            <div className='flex text-white text-sm items-center'>
                 {icon}
                 <div className='ml-2'>
                     {site.icon2}
                 </div>
             </div>
-            <div className='flex text-gray-400 text-sm items-center'>
+            <div className='flex text-white text-sm items-center'>
                 {icon}
                 <div className='ml-2'>
                     {site.icon3}
                 </div>
             </div> 
-            <div className='flex text-gray-400 text-sm items-center'>
+            <div className='flex text-white text-sm items-center'>
                 {icon}
                 <div className='ml-2'>
                     {site.icon4}
                 </div>
             </div>
-            <div className='flex text-gray-400 text-sm items-center'>
+            <div className='flex text-white text-sm items-center'>
                 {icon}
                 <div className='ml-2'>
                     {site.icon5}
                 </div>
             </div>
-            <div className='flex text-gray-400 text-sm items-center'>
+            <div className='flex text-white text-sm items-center'>
                 {icon}
                 <div className='ml-2'>
                     {site.icon6}
