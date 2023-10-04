@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FiX } from "react-icons/fi";
 import ScrollStatus from "../scroll/ScrollStatus";
-import backgroundImg2 from '../../assets/images/logo.mini.png'; 
+import backgroundImg2 from '../../assets/images/logo.mini.branco.png'; 
 
 const NavBar = () => {
     const [menu, setMenu] = useState(false);
@@ -28,7 +28,7 @@ const NavBar = () => {
                      <img data-aos="fade-up" src={backgroundImg2} className='h-[3rem] ' alt="electric" />
                         <h1
                             data-aos="zoom-in"
-                            className="hidden mx-2 md:block lg:block font-extrabold text-left text-transparent md:text-3xl text-xs bg-clip-text bg-gradient-to-r from-sky-500 to-sky-500 h-8"
+                            className="hidden mx-2 md:block lg:block font-extrabold text-left text-transparent md:text-3xl text-xs bg-clip-text bg-gradient-to-r from-white to-white h-8"
 
                         >Solucions Tech
                         </h1>
