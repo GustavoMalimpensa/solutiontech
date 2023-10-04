@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {  TweenLite, Circ } from 'gsap'; // Importe as bibliotecas GSAP necessárias
 
-function HeaderAnimation() {
+const HeaderAnimation = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {

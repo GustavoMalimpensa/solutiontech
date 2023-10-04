@@ -18,11 +18,17 @@ const Sites = () => {
           value2: "R$950",
           value3: "R$1.200",
           icon1: "Hospedagem",
+          description1: "Hospedagem disponobilizada no periodo de um ano",
           icon2: "Dóminio personalizado",
-          icon3: "",
+          description2: "Hospedagem disponobilizada no periodo de um ano",
+          icon3: "Design Responsivo",
+          description3: "Hospedagem disponobilizada no periodo de um ano",
           icon4: "",
+          description4: "Hospedagem disponobilizada no periodo de um ano",
           icon5: "",
+          description5: "Hospedagem disponobilizada no periodo de um ano",
           icon6: "",
+          description6: "Hospedagem disponobilizada no periodo de um ano",
           id: "0"
         },
         {
@@ -33,9 +39,10 @@ const Sites = () => {
           value2: "R$1.499",
           value3: "R$1.800",
           icon1: "Hospedagem",
+          description1: "Hospedagem disponobilizada no periodo de um ano",
           icon2: "Dóminio personalizado",
-          icon3: "",
-          icon4: "",
+          icon3: "Design Responsivo",
+          icon4: "Redirecionamento",
           icon5: "",
           icon6: "",
           id: "1"
@@ -48,8 +55,9 @@ const Sites = () => {
           value2: "R$2.290",
           value3: "R$2.600",
           icon1: "Hospedagem",
+          description1: "Hospedagem disponobilizada no periodo de um ano",
           icon2: "Dóminio personalizado",
-          icon3: "",
+          icon3: "Design Responsivo",
           icon4: "",
           icon5: "Coleta de dados",
           icon6: "Insights dos clientes",
@@ -65,15 +73,16 @@ const Sites = () => {
                 <HeaderAnimation /> 
             </div>
             <div className="relative z-10 pt-0 pb-20">
-                {/*Main content / Hero section */}
                 <div className="HomeContainer">
                 <div className='pt-16 '>
-                    <Heading  className='flex justify-center items-center' heading="Escolha seu plano" 
-                    description="Comece agora a aprimorar seu negócio"></Heading>
-                    <div className='my-20 mx-5 flex flex-wrap gap-10 items-center justify-center' id='site_main'>
-                    {sites.map((site, id ) => (
-                        <SitesCard icon={<BsCheck className='text-sky-500' size={30} />} site={site} key={id}/>
-                    ))}
+                    <div className='flex justify-center items-center'>
+                        <Heading className='flex justify-center items-center' heading="Novos planos para otimizar o seu negócio" 
+                        description="Soluções de site para você aumentar a eficiência e reduzir custos com atendimento"></Heading>
+                    </div>
+                    <div className='my-20 flex flex-wrap gap-10 items-center justify-center' id='site_main'>
+                        {sites.map((site, id ) => (
+                            <SitesCard icon={<BsCheck className='text-sky-500' size={30} />} site={site} key={id}/>
+                        ))}
                     </div>
                 </div>
                 </div>

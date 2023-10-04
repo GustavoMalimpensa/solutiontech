@@ -1,15 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import IconWithDescription from '../../../components/Headings/Description'
+
 
 const SitesCard = ({ site, icon }) => {
+
     return (
+
+    <div data-aos="zoom-in" className='border w-96 border-gray-800 bg-[#0a1123] hover:bg-[#0d1529] p-5 transition-all delay-[30ms] ease-in-out hover:border-gray-700 hover:scale-[101%]  border-b-sky-700 hover:border-b-sky-500' id="Servico_main_1">
         
-        <div data-aos="zoom-in" className='border border-gray-800 bg-[#0a1123] hover:bg-[#0d1529] p-5 transition-all delay-[30ms] ease-in-out hover:border-gray-700 hover:scale-[101%]  border-b-sky-700 hover:border-b-sky-500' id="Servico_main_1">
-            <div className='flex items-center justify-center my-3'>
-                <div>
-                    <img className='rounded-full h-[6.7rem] w-[6.7rem]  border-2 border-[#121212] border-y-sky-500 border-r-sky-500 p-1' id='Team_img' src={site.image} alt={site.image}/>
-                </div>
+        <div className='flex items-center justify-center my-3'>
+            <div>
+                <img className='rounded-full h-[6.7rem] w-[6.7rem]  border-2 border-[#121212] border-y-sky-500 border-r-sky-500 p-1' id='Team_img' src={site.image} alt={site.image}/>
             </div>
+        </div>
+
         <div className='text-white font-bold text-xl flex justify-center items-center'>
             {site.name}
         </div>
@@ -29,13 +34,12 @@ const SitesCard = ({ site, icon }) => {
             </div>
         </div>
 
-
         <div className='flex justify-center items-center'>
 
             <div className='text-white mx-2 text-sl'>
                 12x 
             </div>
-           
+        
             <div className='text-teal-300 font-bold my-0 text-4xl'>
                 {site.value}
             </div>
@@ -46,66 +50,86 @@ const SitesCard = ({ site, icon }) => {
         </div>
     
         <div className=' text-white text-sm font-bold'>
-    {site.icon1 && (
-        <div className='flex text-white text-sm items-center'>
-            {icon}
-            <div className='ml-2'>
-                {site.icon1}
-            </div>
+            {site.icon1 && (
+                <div className='flex text-white text-sm items-center'>
+                    {icon}
+                    <div className='ml-2'>
+                        {site.icon1}
+                    </div>
+                    <div>
+                        <IconWithDescription  description={site.description1} />
+                    </div>
+                </div>
+            )}
+            {site.icon2 && (
+                <div className='flex text-white text-sm items-center'>
+                    {icon}
+                    <div className='ml-2'>
+                        {site.icon2}
+                    </div>
+                    <div>
+                        <IconWithDescription  description={site.description2} />
+                    </div>
+                </div>
+            )}  
+            {site.icon3 && (
+                <div className='flex text-white text-sm items-center'>
+                    {icon}
+                    <div className='ml-2'>
+                        {site.icon3}
+                    </div>
+                    <div>
+                        <IconWithDescription  description={site.description3} />
+                    </div>
+                </div>
+            )}
+            {site.icon4 && (
+                <div className='flex text-white text-sm items-center'>
+                    {icon}
+                    <div className='ml-2'>
+                        {site.icon4}
+                    </div>
+                    <div>
+                        <IconWithDescription  description={site.description4} />
+                    </div>
+                </div>
+            )}
+            {site.icon5 && (
+                <div className='flex text-white text-sm items-center'>
+                    {icon}
+                    <div className='ml-2'>
+                        {site.icon5}
+                    </div>
+                    <div>
+                        <IconWithDescription  description={site.description5} />
+                    </div>
+                </div>
+            )}
+            {site.icon6 && (
+                <div className='flex text-white text-sm items-center'>
+                    {icon}
+                    <div className='ml-2'>
+                        {site.icon6}
+                    </div>
+                    <div>
+                        <IconWithDescription  description={site.description6} />
+                    </div>
+                </div>
+            )}
         </div>
-    )}
-    {site.icon2 && (
-        <div className='flex text-white text-sm items-center'>
-            {icon}
-            <div className='ml-2'>
-                {site.icon2}
-            </div>
-        </div>
-    )}
-    {site.icon3 && (
-        <div className='flex text-white text-sm items-center'>
-            {icon}
-            <div className='ml-2'>
-                {site.icon3}
-            </div>
-        </div>
-    )}
-    {site.icon4 && (
-        <div className='flex text-white text-sm items-center'>
-            {icon}
-            <div className='ml-2'>
-                {site.icon4}
-            </div>
-        </div>
-    )}
-    {site.icon5 && (
-        <div className='flex text-white text-sm items-center'>
-            {icon}
-            <div className='ml-2'>
-                {site.icon5}
-            </div>
-        </div>
-    )}
-    {site.icon6 && (
-        <div className='flex text-white text-sm items-center'>
-            {icon}
-            <div className='ml-2'>
-                {site.icon6}
-            </div>
-        </div>
-    )}
-</div>
-
 
         <Link to="/contato">
-            <div className='py-3 flex justify-center items-center'>
+            <div className='py-3 mx-3 mt-4 flex justify-center items-center'>
                 <button href={`mailto:${site.value}`} className='font-bold bg-emerald-500  border-emerald-500 houver:text-black text-black border hover:bg-teal-100 px-8 py-2 font-medium ease-in transition-all delay-[10ms] '>
-                   Entrar em contato
+                    <p className='m-2' >
+                        Entrar em contato
+                    </p> 
                 </button>
             </div>
         </Link>
 
     </div>
+
     )
 }
 
