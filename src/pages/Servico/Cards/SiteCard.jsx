@@ -45,44 +45,57 @@ const SitesCard = ({ site, icon }) => {
             à vista {site.value2}
         </div>
     
-        <div  className=' text-white text-sm font-bold'>
-            <div className='flex text-white text-sm items-center'>
-                {icon}
-                <div className='ml-2'>
-                    {site.icon1}
-                </div>
-            </div>
-            <div className='flex text-white text-sm items-center'>
-                {icon}
-                <div className='ml-2'>
-                    {site.icon2}
-                </div>
-            </div>
-            <div className='flex text-white text-sm items-center'>
-                {icon}
-                <div className='ml-2'>
-                    {site.icon3}
-                </div>
-            </div> 
-            <div className='flex text-white text-sm items-center'>
-                {icon}
-                <div className='ml-2'>
-                    {site.icon4}
-                </div>
-            </div>
-            <div className='flex text-white text-sm items-center'>
-                {icon}
-                <div className='ml-2'>
-                    {site.icon5}
-                </div>
-            </div>
-            <div className='flex text-white text-sm items-center'>
-                {icon}
-                <div className='ml-2'>
-                    {site.icon6}
-                </div>
+        <div className=' text-white text-sm font-bold'>
+    {site.icon1 && (
+        <div className='flex text-white text-sm items-center'>
+            {icon}
+            <div className='ml-2'>
+                {site.icon1}
             </div>
         </div>
+    )}
+    {site.icon2 && (
+        <div className='flex text-white text-sm items-center'>
+            {icon}
+            <div className='ml-2'>
+                {site.icon2}
+            </div>
+        </div>
+    )}
+    {site.icon3 && (
+        <div className='flex text-white text-sm items-center'>
+            {icon}
+            <div className='ml-2'>
+                {site.icon3}
+            </div>
+        </div>
+    )}
+    {site.icon4 && (
+        <div className='flex text-white text-sm items-center'>
+            {icon}
+            <div className='ml-2'>
+                {site.icon4}
+            </div>
+        </div>
+    )}
+    {site.icon5 && (
+        <div className='flex text-white text-sm items-center'>
+            {icon}
+            <div className='ml-2'>
+                {site.icon5}
+            </div>
+        </div>
+    )}
+    {site.icon6 && (
+        <div className='flex text-white text-sm items-center'>
+            {icon}
+            <div className='ml-2'>
+                {site.icon6}
+            </div>
+        </div>
+    )}
+</div>
+
 
         <Link to="/contato">
             <div className='py-3 flex justify-center items-center'>
