@@ -1,9 +1,7 @@
 import React from "react";
 import Heading from '../../components/Headings/Heading'
-import { BsCheck } from 'react-icons/bs'
-import backgroundImg12 from '../../assets/images/terra.png' 
+import { BsCheck } from 'react-icons/bs' 
 import backgroundImg13 from '../../assets/images/lista.png'
-import backgroundImg14 from '../../assets/images/datascience.png'
 import HeaderAnimation from '../../components/Globe/HeaderAnimation';
 import CatalogoCard from "./Cards/CatalogoCard";
 
@@ -14,44 +12,63 @@ const Catalogo = () => {
     const catalogos = [
         {
           name: 'Cátalogo básico (Estático)',
-          image: backgroundImg12,
+          image: backgroundImg13,
           about: "Cátalgo para exibição dos produtos, de uma maneira prática, facilitando a venda e visualização para os clientes.", 
-          value: "12x79,90",
-          value2: "800,00",
+          value: "R$84",
+          value2: "R$1.008",
+          value3: "R$1.200",
           icon1: "Hospedagem",
-          icon2: "Dóminio proprio",
-          icon3: "",
+          description1: "Hospedagem disponobilizada no periodo de um ano",
+          icon2: "Dóminio personalizado",
+          description2: "Hospedagem disponobilizada no periodo de um ano",
+          icon3: "Design Responsivo",
+          description3: "Hospedagem disponobilizada no periodo de um ano",
           icon4: "",
+          description4: "Hospedagem disponobilizada no periodo de um ano",
           icon5: "",
+          description5: "Hospedagem disponobilizada no periodo de um ano",
           icon6: "",
+          description6: "Hospedagem disponobilizada no periodo de um ano",
           id: "0"
         },
         {
           name: 'Cátalogo médio (Dínamico)',
           image: backgroundImg13,
           about: "Uma plataforma digital que organiza, apresenta e facilita a compra de produtos de uma empresa, melhorando a visibilidade e acessibilidade dos produtos aos clientes.", 
-          value: "12x119,90",
-          value2: "1.199,00",
+          value: "R$167",
+          value2: "R$2.000",
+          value3: "R$2.300",
           icon1: "Hospedagem",
-          icon2: "Dóminio proprio",
-          icon3: "Compra pelo whatsapp",
-          icon4: "Gestão dos produtos",
+          description1: "Hospedagem disponobilizada no periodo de um ano",
+          icon2: "Dóminio personalizado",
+          description2: "Dóminio personalizado de 1 ano, com o nome que desejar",
+          icon3: "Design Responsivo",
+          description3: "Compativel com qualquer dispositivo ou tamanho de tela",
+          icon4: "Redirecionamento",
+          description4: "Redirecione seu cliente para o whatsapp",
           icon5: "",
           icon6: "",
           id: "1"
         },
         {
           name: 'Cátalogo Avançado',
-          image: backgroundImg14,
+          image: backgroundImg13,
           about: "Um campo que utiliza técnicas e algoritmos para coletar, analisar e interpretar grandes volumes de dados, fornecendo insights valiosos e tomadas de decisões.", 
-          value: "12x179.90",
-          value2: "1.790,00",
+          value: "R$179",
+          value2: "R$1.790",
+          value3: "R$2.100",
           icon1: "Hospedagem",
+          description1: "Hospedagem disponobilizada no periodo de um ano",
           icon2: "Dóminio personalizado",
-          icon3: "Compra pelo whatsapp",
-          icon4: "Gestão dos produtos",
+          description2: "Dóminio personalizado de 1 ano, com o nome que desejar",
+          icon3: "Design Responsivo",
+          description3: "Compativel com qualquer dispositivo ou tamanho de tela",
+          icon4: "Redirecionamento",
+          description4: "Redirecione seu cliente para o whatsapp",
           icon5: "Coleta de dados",
-          icon6: "Insights dos clientes",
+          description5: "Saiba quem é seu publico alvo e por onde está entrando em contato",
+          icon6: "Insights dos produtos",
+          description6: "Obtenha dados sobre seus produtos, tenha parametros sobre venda e interesse ",
           id: "2"
         } 
         
@@ -64,11 +81,10 @@ const Catalogo = () => {
               <HeaderAnimation /> 
           </div>
           <div className="relative z-10 pt-0 pb-20">
-            {/*Main content / Hero section */}
             <div className="HomeContainer">
               <div className='pt-16'>
-                <Heading  className='flex justify-center items-center' heading="O que podemos fazer por você?" 
-                description="Somos uma agência digital especializada em desenvolver soluções tecnológicas inteligentes, temos como objetivo usar nossos serviços para ajudar empresas a crescerem e atingirem seus objetivos. Venha ser nosso parceiro!"></Heading>
+                <Heading  className='flex justify-center items-center' heading="Nossos planos para otimizar o seu negócio" 
+                description="Soluções de cátalogo para você aumentar a eficiência e reduzir custos com atendimento"></Heading>
                 <div className='my-20 mx-5 flex flex-wrap gap-10 items-center justify-center' id='catalogo_main'>
                   {catalogos.map((catalogo, id ) => (
                     <CatalogoCard icon={<BsCheck className='text-sky-500' size={30} />} catalogo={catalogo} key={id}/>

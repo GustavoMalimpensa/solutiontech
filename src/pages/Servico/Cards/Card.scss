@@ -33,3 +33,29 @@
     transition: all 0.3s ease;
 }
   
+/* Estilos para o triângulo apontando para cima */
+.tooltip-arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid #01080E; /* Cor de fundo da caixa de descrição */
+    position: absolute;
+    top: -7px; /* Posição acima da caixa de descrição */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilos para o círculo ao redor da "?" interrogação */
+.tooltip-circle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-question-mark {
+    font-size: 18px; /* Tamanho do ponto de interrogação */
+}
+
+/* Adicione outros estilos conforme necessário */
+  

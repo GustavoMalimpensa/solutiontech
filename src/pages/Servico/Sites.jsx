@@ -14,15 +14,15 @@ const Sites = () => {
           name: 'Site Lite',
           image: backgroundImg12,
           about: "Mostre seus serviços ou produtos para todo o mundo, demonstre tudo o que é capaz.", 
-          value: "R$95",
-          value2: "R$950",
+          value: "R$84",
+          value2: "R$1.008",
           value3: "R$1.200",
           icon1: "Hospedagem",
           description1: "Hospedagem disponobilizada no periodo de um ano",
           icon2: "Dóminio personalizado",
-          description2: "Hospedagem disponobilizada no periodo de um ano",
+          description2: "Dóminio personalizado de 1 ano, com o nome que desejar",
           icon3: "Design Responsivo",
-          description3: "Hospedagem disponobilizada no periodo de um ano",
+          description3: "Compativel com qualquer dispositivo ou tamanho de tela ",
           icon4: "",
           description4: "Hospedagem disponobilizada no periodo de um ano",
           icon5: "",
@@ -35,14 +35,17 @@ const Sites = () => {
           name: 'Site Pro',
           image: backgroundImg12,
           about: "Mostre seus serviços ou produtos para todo o mundo, demonstre tudo o que é capaz.", 
-          value: "R$149",
-          value2: "R$1.499",
-          value3: "R$1.800",
+          value: "R$110",
+          value2: "R$1.320",
+          value3: "R$1.700",
           icon1: "Hospedagem",
           description1: "Hospedagem disponobilizada no periodo de um ano",
           icon2: "Dóminio personalizado",
+          description2: "Dóminio personalizado de 1 ano, com o nome que desejar",
           icon3: "Design Responsivo",
+          description3: "Compativel com qualquer dispositivo ou tamanho de tela",
           icon4: "Redirecionamento",
+          description4: "Redirecione seu cliente para o whatsapp",
           icon5: "",
           icon6: "",
           id: "1"
@@ -51,16 +54,21 @@ const Sites = () => {
           name: 'Site Business',
           image: backgroundImg12,
           about: "Mostre seus serviços ou produtos para todo o mundo, demonstre tudo o que é capaz.", 
-          value: "R$229",
-          value2: "R$2.290",
-          value3: "R$2.600",
+          value: "R$167",
+          value2: "R$2.000",
+          value3: "R$2.300",
           icon1: "Hospedagem",
           description1: "Hospedagem disponobilizada no periodo de um ano",
           icon2: "Dóminio personalizado",
+          description2: "Dóminio personalizado de 1 ano, com o nome que desejar",
           icon3: "Design Responsivo",
-          icon4: "",
+          description3: "Compativel com qualquer dispositivo ou tamanho de tela",
+          icon4: "Redirecionamento",
+          description4: "Redirecione seu cliente para o whatsapp",
           icon5: "Coleta de dados",
+          description5: "Saiba quem é seu publico alvo e por onde está entrando em contato",
           icon6: "Insights dos clientes",
+          description6: "Descubra dia, hora e plataforma que seus clientes estão acessando seu conteudo",
           id: "2"
         } 
         
@@ -76,7 +84,7 @@ const Sites = () => {
                 <div className="HomeContainer">
                 <div className='pt-16 '>
                     <div className='flex justify-center items-center'>
-                        <Heading className='flex justify-center items-center' heading="Novos planos para otimizar o seu negócio" 
+                        <Heading className='flex justify-center items-center' heading="Nossos planos para otimizar o seu negócio" 
                         description="Soluções de site para você aumentar a eficiência e reduzir custos com atendimento"></Heading>
                     </div>
                     <div className='my-20 flex flex-wrap gap-10 items-center justify-center' id='site_main'>
