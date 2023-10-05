@@ -1,9 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import IconWithDescription from '../../../components/Headings/Description'
+import './SteCard.scss'
 
 
 const SitesCard = ({ site, icon }) => {
+
+    const [showTooltip1, setShowTooltip1] = useState(false);
+    const [showTooltip2, setShowTooltip2] = useState(false);
+    const [showTooltip3, setShowTooltip3] = useState(false);
+    const [showTooltip4, setShowTooltip4] = useState(false);
+    const [showTooltip5, setShowTooltip5] = useState(false);
+    const [showTooltip6, setShowTooltip6] = useState(false);
+
+    const toggleTooltip1 = () => {
+        setShowTooltip1(!showTooltip1);
+    };
+
+    const toggleTooltip2 = () => {
+        setShowTooltip2(!showTooltip2);
+    };
+
+    const toggleTooltip3 = () => {
+        setShowTooltip3(!showTooltip3);
+    };
+
+    const toggleTooltip4 = () => {
+        setShowTooltip4(!showTooltip4);
+    };
+
+    const toggleTooltip5 = () => {
+        setShowTooltip5(!showTooltip5);
+    };
+
+    const toggleTooltip6 = () => {
+        setShowTooltip6(!showTooltip6);
+    };
+
 
     return (
 
@@ -56,9 +88,18 @@ const SitesCard = ({ site, icon }) => {
                     <div className='ml-2'>
                         {site.icon1}
                     </div>
-                    <div>
-                        <IconWithDescription  description={site.description1} />
+                
+
+                    <div className='flex text-white text-sm items-center '>
+                        <div className="planos-pagamento__legenda-tooltip">
+                        <div className={`planos-pagamento__legenda-tooltip${showTooltip1 ? '--ativo' : ''}`}>
+                            <p className="planos-pagamento__legenda-descricao"> {site.description1}</p>
+                        </div>
+                            <span onClick={toggleTooltip1}>?</span>
+                        </div>
                     </div>
+
+                    
                 </div>
             )}
             {site.icon2 && (
@@ -67,9 +108,16 @@ const SitesCard = ({ site, icon }) => {
                     <div className='ml-2'>
                         {site.icon2}
                     </div>
-                    <div>
-                        <IconWithDescription  description={site.description2} />
+                    
+                    <div className='flex text-white text-sm items-center '>
+                        <div className="planos-pagamento__legenda-tooltip">
+                        <div className={`planos-pagamento__legenda-tooltip${showTooltip2 ? '--ativo' : ''}`}>
+                            <p className="planos-pagamento__legenda-descricao">{site.description2}</p>
+                        </div>
+                        <span onClick={toggleTooltip2}>?</span>
+                        </div>
                     </div>
+                    
                 </div>
             )}  
             {site.icon3 && (
@@ -78,8 +126,13 @@ const SitesCard = ({ site, icon }) => {
                     <div className='ml-2'>
                         {site.icon3}
                     </div>
-                    <div>
-                        <IconWithDescription  description={site.description3} />
+                    <div className='flex text-white text-sm items-center '>
+                        <div className="planos-pagamento__legenda-tooltip">
+                        <div className={`planos-pagamento__legenda-tooltip${showTooltip3 ? '--ativo' : ''}`}>
+                            <p className="planos-pagamento__legenda-descricao">{site.description3}</p>
+                        </div>
+                        <span onClick={toggleTooltip3}>?</span>
+                        </div>
                     </div>
                 </div>
             )}
@@ -89,8 +142,13 @@ const SitesCard = ({ site, icon }) => {
                     <div className='ml-2'>
                         {site.icon4}
                     </div>
-                    <div>
-                        <IconWithDescription  description={site.description4} />
+                    <div className='flex text-white text-sm items-center '>
+                        <div className="planos-pagamento__legenda-tooltip">
+                        <div className={`planos-pagamento__legenda-tooltip${showTooltip4 ? '--ativo' : ''}`}>
+                            <p className="planos-pagamento__legenda-descricao">{site.description4}</p>
+                        </div>
+                        <span onClick={toggleTooltip4}>?</span>
+                        </div>
                     </div>
                 </div>
             )}
@@ -100,8 +158,13 @@ const SitesCard = ({ site, icon }) => {
                     <div className='ml-2'>
                         {site.icon5}
                     </div>
-                    <div>
-                        <IconWithDescription  description={site.description5} />
+                    <div className='flex text-white text-sm items-center '>
+                        <div className="planos-pagamento__legenda-tooltip">
+                        <div className={`planos-pagamento__legenda-tooltip${showTooltip5 ? '--ativo' : ''}`}>
+                            <p className="planos-pagamento__legenda-descricao">{site.description5}</p>
+                        </div>
+                        <span onClick={toggleTooltip5}>?</span>
+                        </div>
                     </div>
                 </div>
             )}
@@ -111,8 +174,14 @@ const SitesCard = ({ site, icon }) => {
                     <div className='ml-2'>
                         {site.icon6}
                     </div>
-                    <div>
-                        <IconWithDescription  description={site.description6} />
+                    <div className='flex text-white text-sm items-center '>
+                        <div className="planos-pagamento__legenda-tooltip">
+                        <div className={`planos-pagamento__legenda-tooltip${showTooltip6 ? '--ativo' : ''}`}>
+                            <div className="w-4 h-4 bg-[#050811f0] top-0 left-1/2 transform -translate-x-2 rotate-45"></div>
+                            <p className="planos-pagamento__legenda-descricao">{site.description6}</p>
+                        </div>
+                        <span onClick={toggleTooltip6}>?</span>
+                        </div>
                     </div>
                 </div>
             )}

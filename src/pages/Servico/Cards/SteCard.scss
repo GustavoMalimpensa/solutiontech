@@ -1,0 +1,35 @@
+// Estilos para o ícone de interrogação
+.planos-pagamento__legenda-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0.125rem;
+    margin-left: 0.3rem;
+}
+  
+.planos-pagamento__legenda-tooltip--ativo {
+    .planos-pagamento__legenda-descricao {
+        transform: translateY(3px);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+  
+// Estilos para a caixa de comentário
+.planos-pagamento__legenda-descricao {
+    position: absolute;
+    top: calc(100% + 9px);
+    right: -95px;
+    font-size: 0.875rem;
+    line-height: 1.47;
+    background-color: #01080E;
+    border-radius: 2px;
+    padding: 0.75rem 0.9375rem 0.9375rem;
+    width: 65vw;
+    max-width: 200px;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+  
