@@ -53,6 +53,7 @@ const Sobre = () => {
           <Vantagens key={data.id} title={data.title} description={data.description} image={data.image} />
         ))}
       </div>
+      
       <div className='my-10 pt-20'>
         <Heading1 text1={"Aprenda com as"} text2={" Grandes Empresas"} details={"Também conhecidas como 'Big Techs', são corporações de destaque no setor tecnológico, com alcance global e influência significativa em diversas áreas."} />
       </div>  
