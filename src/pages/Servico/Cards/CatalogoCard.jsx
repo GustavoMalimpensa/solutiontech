@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Card.scss'
 
+
 const CatalogoCard = ({ catalogo, icon }) => {
 
     const [showTooltip1, setShowTooltip1] = useState(false);

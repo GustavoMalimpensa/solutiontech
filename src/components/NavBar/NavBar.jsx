@@ -47,7 +47,7 @@ const NavBar = () => {
                         <li>
                             <NavLink style={{ textDecoration: "none" }} to="/Serviços">
                                 {({ isActive, isPending }) => (
-                                    <span className={`hover:underline underline-offset-4 decoration-sky-500 ${isActive ? "text-sky-500 font-medium" : "text-white"}`}>Serviços</span>
+                                    <span className={`hover:underline underline-offset-4 font-bold decoration-sky-500 ${isActive ? "text-sky-500 font-medium" : "text-white"}`}>Serviços</span>
                                 )}
                             </NavLink>
                         </li>
