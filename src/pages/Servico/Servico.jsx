@@ -9,7 +9,9 @@ import backgroundImg14 from '../../assets/images/datascience.png'
 import backgroundImg15 from '../../assets/images/e-mail.png'
 import backgroundImg16 from '../../assets/images/lupa.png'
 import backgroundImg17 from '../../assets/images/maleta.png'
+import backgroundImg18 from '../../assets/images/marketplace.png'
 import HeaderAnimation from '../../components/Globe/HeaderAnimation';
+
 
 const Servico = () => {
   document.title = 'Solucions Tech | Serviços';
@@ -86,6 +88,18 @@ const Servico = () => {
       icon4: "Consultoria de Sistemas",
       icon5: "Para Pequenas Empresas",
       id: "6"
+    },
+    {
+      name: 'Marketplace',
+      image: backgroundImg18,
+      about: "Com o nosso serviço, você estará pronto para conquistar o mundo do comércio eletrônico e impulsionar o crescimento do seu negócio", 
+      value: "/Contato",
+      icon1: "Soluções Personalizadas",
+      icon2: "Design Intuitivo",
+      icon3: "Funcionalidades Avançadas",
+      icon4: "Escalabilidade",
+      icon5: "Segurança e Confiabilidade",
+      id: "7"
     }
     
   ]
