@@ -11,7 +11,7 @@ const Catalogo = () => {
 
     const catalogos = [
         {
-          name: 'Cátalogo básico (Estático)',
+          name: 'Cátalogo Lite',
           image: backgroundImg13,
           about: "Cátalgo para exibição dos produtos, de uma maneira prática, facilitando a venda e visualização para os clientes.", 
           value: "R$84",
@@ -32,7 +32,7 @@ const Catalogo = () => {
           id: "0"
         },
         {
-          name: 'Cátalogo médio (Dínamico)',
+          name: 'Cátalogo Pro',
           image: backgroundImg13,
           about: "Uma plataforma digital que organiza, apresenta e facilita a compra de produtos de uma empresa, melhorando a visibilidade e acessibilidade dos produtos aos clientes.", 
           value: "R$167",
@@ -51,7 +51,7 @@ const Catalogo = () => {
           id: "1"
         },
         {
-          name: 'Cátalogo Avançado',
+          name: 'Cátalogo Business',
           image: backgroundImg13,
           about: "Um campo que utiliza técnicas e algoritmos para coletar, analisar e interpretar grandes volumes de dados, fornecendo insights valiosos e tomadas de decisões.", 
           value: "R$179",
