@@ -23,7 +23,7 @@ const Vantagens = ({title,description,image}) => {
 
 const Card2 = ({ link, image, title, company }) => {
     return (
-        <div data-aos="zoom-in" className=' w-[21rem] bg-white p-5 hover:scale-[102%] z-0  transition-all delay-[30ms] ease-in-out'>
+        <div data-aos="zoom-in" className=' w-[21rem] bg-[#0a1123] p-5 hover:scale-[102%] z-0  transition-all delay-[30ms] ease-in-out'>
             <a href={link} target='_blank' className='h-[10rem] flex items-center justify-center overflow-hidden bg-green-500 mb-5 '>
                 <img loading='lazy' className='w-auto h-[13rem] bg-cover bg-center ' src={image} alt={title} />
             </a>

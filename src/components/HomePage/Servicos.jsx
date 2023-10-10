@@ -40,7 +40,7 @@ const Servicos = () => {
         }
     ]
     return (
-        <div className='pt-10'>
+        <div className='pt-28'>
             <Heading1 details={"Descubra como alavancar seu negócio com facilidade! Você já imaginou ter todas as ferramentas necessárias para vender seus produtos e expandir seu alcance ?"} text1={"Serviços para o seu"} text2={"negocio"} />
             <div className='flex items-center lg:flex-row md:flex-row flex-col justify-center lg:gap-x-16 md:gap-x-8 w-full mt-0'>
                 <div className='flex flex-col items-center justify-center gap-5 mt-5'>
