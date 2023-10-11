@@ -3,6 +3,7 @@ import './HomePage.scss'
 import Sobre from '../../components/HomePage/Sobre';
 import Perguntas from '../../components/HomePage/Perguntas';
 import Servicos from '../../components/HomePage/Servicos';
+import Bigtech from '../../components/HomePage/Bigtech';
 import HeaderAnimation from '../../components/Globe/HeaderAnimation';
 
 const HomePage = () => {
@@ -30,6 +31,8 @@ const HomePage = () => {
       <div id="secao2">
         <Sobre/>
       </div>
+
+      <Bigtech/>
 
       <div id="secao3">
         <Servicos/>

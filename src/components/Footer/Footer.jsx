@@ -6,7 +6,7 @@ const Footer = () => {
   const date = new Date;
   const year = date.getFullYear();
   return (
-    <div className="bg-[#0a1123] text-sm w-[100%] pt-8 ">
+    <div className="bg-[#0a1123] text-sm w-[100%] pt-20 " id="secao5">
 
       <div className="mb-10 w-[90%] grid gap-2 md:gap-4 lg:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-[auto] items-start justify-items-center">
 
@@ -34,14 +34,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div data-aos="fade-up" className='mt-10 w-[100%] md:w-[100%] lg:w-[100%] order-2 md:order-2 lg:order-2 '>
-          <div className='flex items-center justify-center'><h1 className='font-extrabold text-2xl text-blue-700 mr-3'>|</h1><h1 className='text-lg font-semibold'>Links Úteis</h1></div>
+        <div data-aos="fade-up" className='mt-10 w-[100%] md:w-[100%] lg:w-[100%] order-2 md:order-2 lg:order-2'>
+          <div className='flex items-center justify-center'><h1 className='font-extrabold text-2xl text-blue-700 mr-3'>|</h1><h1 className='text-lg font-semibold'>Contatos</h1></div>
           <ul className='mt-4 flex flex-col gap-2 text-base justify-center items-center'>
-            <li className='hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/news"><p className='text-gray-400 hover:text-sky-500'>Serviços</p></Link></li>
-            <li className='hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/events"><p className='text-gray-400 hover:text-sky-500'>Pacotes</p></Link></li>
-            <li className=' hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/team"><p className='text-gray-400 hover:text-sky-500'>Parceiros</p></Link></li>
-            <li className=' hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/gallery"><p className='text-gray-400 hover:text-sky-500'>Clientes</p></Link></li>
-            <li className='hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/admin"><p className='text-gray-400 hover:text-sky-500'>Tecnologias</p></Link></li>
+            <p className='max-w-[16rem] pt-4 text'>Rio Claro / SP - Brasil</p>
+            <p className='pt-2'><a style={{ textDecoration: "none" }} href="tel:(19)99937-2133" className='text-blue-700 ml-2 font-semibold'><span className='hover:text-gray-400 text-sky-500'>(19) 99937-2133</span></a></p>
+            <p className='pt-2'><a style={{ textDecoration: "none" }} href="mailto:ontato@solutiontech.dev" className='text-blue-700 ml-2 font-semibold'><span className='hover:text-gray-400 text-sky-500'>contato@solutiontech.dev</span></a></p>          
           </ul>
         </div>
 
@@ -57,12 +55,16 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div data-aos="fade-up" className='mt-10 w-[100%] md:w-[100%] lg:w-[100%] order-2 md:order-2 lg:order-2'>
-          <div className='flex items-center justify-center'><h1 className='font-extrabold text-2xl text-blue-700 mr-3'>|</h1><h1 className='text-lg font-semibold'>Contatos</h1></div>
+  
+
+        <div data-aos="fade-up" className='mt-10 w-[100%] md:w-[100%] lg:w-[100%] order-2 md:order-2 lg:order-2 '>
+          <div className='flex items-center justify-center'><h1 className='font-extrabold text-2xl text-blue-700 mr-3'>|</h1><h1 className='text-lg font-semibold'>Links Úteis</h1></div>
           <ul className='mt-4 flex flex-col gap-2 text-base justify-center items-center'>
-            <p className='max-w-[16rem] pt-4 text'>Rio Claro / SP - Brasil</p>
-            <p className='pt-2'><a style={{ textDecoration: "none" }} href="tel:(19)99937-2133" className='text-blue-700 ml-2 font-semibold'><span className='hover:text-gray-400 text-sky-500'>(19) 99937-2133</span></a></p>
-            <p className='pt-2'><a style={{ textDecoration: "none" }} href="mailto:ontato@solutiontech.dev" className='text-blue-700 ml-2 font-semibold'><span className='hover:text-gray-400 text-sky-500'>contato@solutiontech.dev</span></a></p>          
+            <li className='hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/news"><p className='text-gray-400 hover:text-sky-500'>Serviços</p></Link></li>
+            <li className='hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/events"><p className='text-gray-400 hover:text-sky-500'>Pacotes</p></Link></li>
+            <li className=' hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/team"><p className='text-gray-400 hover:text-sky-500'>Parceiros</p></Link></li>
+            <li className=' hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/gallery"><p className='text-gray-400 hover:text-sky-500'>Clientes</p></Link></li>
+            <li className='hover:text-blue-600'><Link style={{ textDecoration: "none" }} to="/admin"><p className='text-gray-400 hover:text-sky-500'>Tecnologias</p></Link></li>
           </ul>
         </div>
 
@@ -70,17 +72,18 @@ const Footer = () => {
 
 
       </div>
-
-      <div className="w-[90%] m-[auto] bg-gray-800 h-[1px]"></div>
-      <div className="m-[auto] pb-8 pt-5 text-gray-600 font-medium text-sm flex flex-col md:flex-row lg:flex-row justify-between items-center w-[90%]">
-        <p>
-          © {year} Tech Solucions.
-        </p>
-        <p>
-          Direitos reservados para <a style={{ textDecoration: "none" }} className="font-medium text-blue-500" href="#">
-            <span className='text-sky-500'>Solution Tech</span>
-          </a>.
-        </p>
+      <div className='pt-10'> 
+        <div className="w-[90%] m-[auto] bg-gray-800 h-[1px] t-10"></div>
+        <div className="m-[auto] pb-8 pt-5 text-gray-600 font-medium text-sm flex flex-col md:flex-row lg:flex-row justify-between items-center w-[90%]">
+          <p>
+            © {year} Tech Solucions.
+          </p>
+          <p>
+            Direitos reservados para <a style={{ textDecoration: "none" }} className="font-medium text-blue-500" href="#">
+              <span className='text-sky-500'>Solution Tech</span>
+            </a>.
+          </p>
+        </div>
       </div>
     </div>
   )
