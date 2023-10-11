@@ -4,6 +4,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './utils/Layout';
+import Layout2 from './utils/Layout2';
 import { HomePage,  Contato, Error } from './pages/index'
 import { Servico, Sites, Catalogo, Otimizacao } from './pages/index';
 import BigTech from './pages/About/Bigtech';
@@ -19,9 +20,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={
-          <Layout>
+          <Layout2>
             <HomePage />
-          </Layout>
+          </Layout2>
         } />
         <Route path="/Serviços" element={
           <Layout>

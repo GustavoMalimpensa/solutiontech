@@ -5,7 +5,7 @@ import backgroundImg2 from '../../assets/images/logo.mini.branco.png';
 import React, { useState, useEffect } from 'react';
 import { Link, animateScroll as scroll, scroller } from 'react-scroll';
 
-const NavBar = () => {
+const NavBar2 = () => {
     const [menu, setMenu] = useState(false);
     const [colorChange, setColorchange] = useState(false);
     const [activeLink, setActiveLink] = useState(null);
@@ -41,7 +41,7 @@ const NavBar = () => {
         <div className={`w-[100%] fixed items-center justify-center ${colorChange && " bg-black transition-all delay-100 ease-in-out bg-opacity-20 backdrop-blur-md border-gray-800 shadow-lg"}`}>
             <div className="flex items-center justify-between lg:w-[80rem] md:w-[100%] px-4 md:px-3 py-5 m-auto text-lg">
                 <div className="flex items-center">
-                    <NavLink to="/" className="flex items-center">
+                    <Link to="/" className="flex items-center">
                      <img data-aos="fade-up" src={backgroundImg2} className='h-[3rem] ' alt="electric" />
                         <h1
                             data-aos="zoom-in"
@@ -49,37 +49,37 @@ const NavBar = () => {
 
                         >Solucions Tech
                         </h1>
-                    </NavLink>
+                    </Link>
                 </div>
                 <div className="flex items-center">
                     <ul className="md:flex gap-8 hidden items-center text-lg font-extrabold">
                         <li>
-                            <NavLink
+                            <Link
                             to="/"
                             className={`hover:underline underline-offset-4 ${activeLink === "secao1" ? "decoration-blue-500" : "decoration-sky-500"}`}
                             onClick={() => scrollTo("/")}
                             >
                             Página Inicial
-                            </NavLink>
+                            </Link>
                         </li>
                         <li>
-                            <NavLink
-                            to="/#secao2"
+                            <Link
+                            to="secao2"
                             className={`hover:underline underline-offset-4 ${activeLink === "secao2" ? "decoration-blue-500" : "decoration-sky-500"}`}
-                            onClick={() => scrollTo("/#secao2")}
+                            onClick={() => scrollTo("secao2")}
                             >
                             Sobre
-                            </NavLink>
+                            </Link>
                         </li>
                         
                         <li>
-                            <NavLink
-                            to="/#secao3"
+                            <Link
+                            to="secao2"
                             className={`hover:underline underline-offset-4 ${activeLink === "secao3" ? "decoration-blue-500" : "decoration-sky-500"}`}
-                            onClick={() => scrollTo("/#secao3")}
+                            onClick={() => scrollTo("secao3")}
                             >
                             Serviços
-                            </NavLink>
+                            </Link>
                         </li>
                         <li>
                             <Link 
@@ -114,48 +114,48 @@ const NavBar = () => {
             <div  data-aos="zoom-in" className="md:hidden items-center justify-center flex fixed top-[rem] right-0  w-[22rem] py-2 mr-5 shadow-md text-white bg-gray-900 border-gray-700 border">
                 <ul>
                     <li>
-                        <NavLink
-                        to="/#secao1">
+                        <Link
+                        to="secao1">
                         <button
                         onClick={() => {
                             setMenu(false);
-                            scrollTo("/#secao1");
+                            scrollTo("secao1");
                         }}
                         className="hover:underline hover:border-blue-300 border-gray-900 py-1.5 w-[100%] pl-4 cursor-pointer  hover:bg-gray-700 text-center"
                         >
                         Página Inicial
                         </button>
-                        </NavLink>
-                    
+                        </Link>
+                        
                     </li>
                     <li>
-                        <NavLink
-                        to="/#secao2">
+                        <Link
+                        to="secao2">
                         <button
                         onClick={() => {
                             setMenu(false);
-                            scrollTo("/#secao2");
+                            scrollTo("secao2");
                         }}
                         className="hover:underline hover:border-blue-300 border-4 border-gray-900 py-1.5 w-[100%] cursor-pointer  hover:bg-gray-700 text-center"
                         >
                         Sobre
                         </button>
-                        </NavLink>
+                        </Link>
                     </li>
                     <li>
-                        <NavLink
-                        to="/#secao3">
+                        <Link
+                        to="secao2">
                         <button
                         
                         onClick={() => {
                             setMenu(false);
-                            scrollTo("/#secao3");
+                            scrollTo("secao3");
                         }}
                         className="hover:underline hover:border-blue-300 border-4 border-gray-900 py-1.5 w-[100%] cursor-pointer  hover:bg-gray-700 text-center"
                         >
                         Serviços
                         </button>
-                        </NavLink>
+                        </Link>
                     </li>  
                 
                     <li>
@@ -181,7 +181,7 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default NavBar2;
 
 
 
