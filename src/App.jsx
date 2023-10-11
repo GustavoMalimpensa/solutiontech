@@ -33,17 +33,17 @@ function App() {
             <Servico />
           </Layout>
         } />
-        <Route path="/Serviços/sites" element={
+        <Route path="/Serviços-sites" element={
           <Layout>
             <Sites />
           </Layout>
         } />
-        <Route path="/Serviços/catalogo" element={
+        <Route path="/Serviços-catalogo" element={
           <Layout>
             <Catalogo />
           </Layout>
         } />
-        <Route path="/Serviços/otimizacao" element={
+        <Route path="/Serviços-otimizacao" element={
           <Layout>
             <Otimizacao />
           </Layout>

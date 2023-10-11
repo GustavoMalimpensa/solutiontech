@@ -38,7 +38,7 @@ const NavBar = () => {
                     <ul className="md:flex gap-8 hidden items-center text-lg font-extrabold">
                         <li>
                             <NavLink style={{ textDecoration: "none" }} to="/">
-                                {({ isActive, isPending }) => (
+                                {({ isActive }) => (
                                     <span className={`hover:underline underline-offset-4 decoration-sky-500 ${isActive ? "text-sky-500 font-medium" : "text-white"} `} >Página Inicial</span>
                                 )}
                             </NavLink>
@@ -46,14 +46,14 @@ const NavBar = () => {
 
                         <li>
                             <NavLink style={{ textDecoration: "none" }} to="/Serviços">
-                                {({ isActive, isPending }) => (
+                                {({ isActive }) => (
                                     <span className={`hover:underline underline-offset-4 font-bold decoration-sky-500 ${isActive ? "text-sky-500 font-medium" : "text-white"}`}>Serviços</span>
                                 )}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink style={{ textDecoration: "none" }} to="/contato">
-                                {({ isActive, isPending }) => (
+                                {({ isActive }) => (
                                     <span className={`hover:underline underline-offset-4 decoration-blue-500 ${isActive ? "text-sky-500 font-medium" : "text-white"}`}>Contato</span>
                                 )}
                             </NavLink>

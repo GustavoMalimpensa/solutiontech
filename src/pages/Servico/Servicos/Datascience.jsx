@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
  
-import Heading from '../../components/Headings/Heading'
+import Heading from '../../../../components/Headings/Heading'
 
 const Datascience = () => {
 

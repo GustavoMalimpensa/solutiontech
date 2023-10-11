@@ -1,9 +1,9 @@
 import React from "react";
-import Heading from '../../components/Headings/Heading'
+import Heading from '../../../components/Headings/Heading'
 import { BsCheck } from 'react-icons/bs' 
-import backgroundImg13 from '../../assets/images/lista.png'
-import HeaderAnimation from '../../components/Globe/HeaderAnimation';
-import CatalogoCard from "./Cards/CatalogoCard";
+import backgroundImg13 from '../../../assets/images/lista.png'
+import HeaderAnimation from '../../../components/Globe/HeaderAnimation';
+import CatalogoCard from "../Cards/CatalogoCard";
 
 const Catalogo = () => {
 

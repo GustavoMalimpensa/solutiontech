@@ -1,7 +1,7 @@
 import Servico from "./Servico/Servico";
-import Catalogo from "./Servico/Catalogo";
-import Otimizacao from "./Servico/Otimizacao";
-import Sites from "./Servico/Sites";
+import Catalogo from "./Servico/Servicos/Catalogo";
+import Otimizacao from "./Servico/Servicos/Otimizacao";
+import Sites from "./Servico/Servicos/Sites";
 
 import HomePage from "./HomePage/HomePage";
 import Contato from "./Contato/Contato";

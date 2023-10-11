@@ -1,9 +1,9 @@
 import React from "react";
-import Heading from '../../components/Headings/Heading'
+import Heading from '../../../components/Headings/Heading'
 import { BsCheck } from 'react-icons/bs'
-import backgroundImg12 from '../../assets/images/terra.png' 
-import HeaderAnimation from '../../components/Globe/HeaderAnimation';
-import SitesCard from "./Cards/SiteCard";
+import backgroundImg12 from '../../../assets/images/terra.png' 
+import HeaderAnimation from '../../../components/Globe/HeaderAnimation';
+import SitesCard from "../Cards/SiteCard";
 
 const Sites = () => {
 

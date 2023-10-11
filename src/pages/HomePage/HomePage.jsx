@@ -10,7 +10,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="pt-20 font-bold">
+      <div id="secao1" className="pt-20 font-bold">
         <div className="content">
           <div id="large-header" className="large-header">
            <HeaderAnimation />
@@ -26,9 +26,19 @@ const HomePage = () => {
       </div>
   
       <div className='lg:mx-[4rem] md:mx-[3rem] mx-[2rem]'>
+        
+      <div id="secao2">
         <Sobre/>
+      </div>
+
+      <div id="secao3">
         <Servicos/>
-        <Perguntas/>
+      </div>
+        
+      <div id="secao4">
+        <Perguntas/>  
+      </div>  
+      
       </div>
     </div>
   )
