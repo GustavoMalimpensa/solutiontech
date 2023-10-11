@@ -71,6 +71,7 @@ const NavBar = () => {
                             Sobre
                             </Link>
                         </li>
+                        
                         <li>
                             <Link
                             to="secao2"

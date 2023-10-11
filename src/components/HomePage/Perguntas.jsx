@@ -23,7 +23,7 @@ const Perguntas = () => {
 
 
     return (
-        <div className='pt-28'>
+        <div className='pt-28 pb-20'>
             <Heading1 details={"Você está enfrentando desafios complexos e precisa tomar decisões importantes para o seu negócio? Não se preocupe, estamos aqui para ajudar!"} text1={"Perguntas"} text2={"Frequentes"} />
 
             <div className='flex flex-col items-center justify-center gap-4 my-16'>
