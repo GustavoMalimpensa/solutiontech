@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './utils/Layout';
 import { HomePage,  Contato, Error } from './pages/index'
 import { Servico, Sites, Catalogo, Otimizacao } from './pages/index';
-import ScrollToTop from './hooks/useScrollToTop';
 import BigTech from './pages/About/Bigtech';
 
 function App() {
@@ -18,16 +17,12 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={
           <Layout>
             <HomePage />
           </Layout>
         } />
-
-
-
         <Route path="/Serviços" element={
           <Layout>
             <Servico />

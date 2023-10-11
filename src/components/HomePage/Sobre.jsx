@@ -34,7 +34,7 @@ const Sobre = () => {
 
   return (
 
-    <div >
+    <div id="secao2">
       
       {/*
       <div className='my-10 mt-20 '>
@@ -75,6 +75,7 @@ const Sobre = () => {
           </Link> 
         </div>
       </div>
+
     </div>
   )
 }
