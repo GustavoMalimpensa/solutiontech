@@ -49,28 +49,7 @@ const Catalogo = () => {
           icon5: "",
           icon6: "",
           id: "1"
-        },
-        {
-          name: 'Cátalogo Business',
-          image: backgroundImg13,
-          about: "Um campo que utiliza técnicas e algoritmos para coletar, analisar e interpretar grandes volumes de dados, fornecendo insights valiosos e tomadas de decisões.", 
-          value: "R$335",
-          value2: "R$3.700",
-          value3: "R$4.500",
-          icon1: "Hospedagem",
-          description1: "Hospedagem disponobilizada no periodo de um ano",
-          icon2: "Dóminio personalizado",
-          description2: "Dóminio personalizado de 1 ano, com o nome que desejar",
-          icon3: "Design Responsivo",
-          description3: "Compativel com qualquer dispositivo ou tamanho de tela",
-          icon4: "Redirecionamento",
-          description4: "Redirecione seu cliente para o whatsapp",
-          icon5: "Coleta de dados",
-          description5: "Saiba quem é seu publico alvo e por onde está entrando em contato",
-          icon6: "Insights dos produtos",
-          description6: "Obtenha dados sobre seus produtos, tenha parametros sobre venda e interesse ",
-          id: "2"
-        } 
+        }  
         
     ]
 
