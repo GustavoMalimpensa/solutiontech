@@ -6,8 +6,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './utils/Layout';
 import Layout2 from './utils/Layout2';
 import { HomePage,  Contato, Error } from './pages/index'
-import { Servico, Sites, Catalogo, Otimizacao } from './pages/index';
+import { Servico, Sites, Catalogo, Otimizacao, Markteplace, Consultoria, Email, Datascience } from './pages/index';
 import BigTech from './pages/About/Bigtech';
+
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
             <HomePage />
           </Layout2>
         } />
+
+
         <Route path="/Serviços" element={
           <Layout>
             <Servico />
@@ -44,24 +47,27 @@ function App() {
             <Otimizacao />
           </Layout>
         } />
-
-        {/*Main content
-        <Route path="/Serviços/consultoria" element={
+        <Route path="/Serviços-consultoria" element={
           <Layout>
             <Consultoria />
           </Layout>
         } />
-        <Route path="/Serviços/email" element={
+        <Route path="/Serviços-email" element={
           <Layout>
             <Email />
           </Layout>
         } />
-        <Route path="/Serviços/datascience" element={
+        <Route path="/Serviços-datascience" element={
           <Layout>
             <Datascience />
           </Layout>
         } />
-         / Hero section */}
+        <Route path="/Serviços-markteplace" element={
+          <Layout>
+            <Markteplace />
+          </Layout>
+        } />
+        
 
 
          <Route path="/Big-Tech" element={
