@@ -55,25 +55,25 @@ const Catalogo = () => {
 
     return (
     <div className='pt-16'>
-        <main className="bg-thegray home-no-scroll">
-          <div className="absolute flex justify-center  globe-position">
-              <HeaderAnimation /> 
-          </div>
-          <div className="relative z-10 pt-0 pb-20">
-            <div className="HomeContainer">
-              <div className='pt-16'>
-                <Heading  className='flex justify-center items-center' heading="Nossos planos para otimizar o seu negócio" 
-                description="Soluções de cátalogo para você aumentar a eficiência e reduzir custos com atendimento"></Heading>
-                <div className='my-20 mx-5 flex flex-wrap gap-10 items-center justify-center' id='catalogo_main'>
-                  {catalogos.map((catalogo, id ) => (
-                    <CatalogoCard icon={<BsCheck className='text-sky-500' size={30} />} catalogo={catalogo} key={id}/>
-                  ))}
-                </div>
+      <main className="bg-thegray home-no-scroll">
+        <div className="absolute flex justify-center  globe-position">
+            <HeaderAnimation /> 
+        </div>
+        <div className="relative z-10 pt-0 pb-20">
+          <div className="HomeContainer">
+            <div className='pt-16'>
+              <Heading  className='flex justify-center items-center' heading="Nossos planos para otimizar o seu negócio" 
+              description="Soluções de cátalogo para você aumentar a eficiência e reduzir custos com atendimento"></Heading>
+              <div className='my-20 mx-5 flex flex-wrap gap-10 items-center justify-center' id='catalogo_main'>
+                {catalogos.map((catalogo, id ) => (
+                  <CatalogoCard icon={<BsCheck className='text-sky-500' size={30} />} catalogo={catalogo} key={id}/>
+                ))}
               </div>
             </div>
           </div>
-        </main>
-      </div>        
+        </div>
+      </main>
+    </div>        
     )
 
 }

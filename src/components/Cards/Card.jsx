@@ -1,11 +1,12 @@
 import React from 'react'
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom'
 
 const Vantagens = ({title,description,image}) => {
     return (
         <div data-aos="zoom-in" className='w-fit'>
             <div className='border-[1px]  border-gray-800 hover:border-gray-700  w-[21rem] p-5 hover:scale-[102%] z-0 hover:z-10 bg-[#0a1123] transition-all delay-[30ms] ease-in-out'>
-                <div className='h-[10rem] rounded flex items-center justify-center overflow-hidden bg-green-500 mb-5'>
+                <div className='h-[10rem] rounded flex items-center justify-center overflow-hidden bg-[#0a1123] mb-5'>
                     <img loading='lazy' className='w-auto h-[13rem] bg-cover bg-center' src={image} alt="about" />
                 </div>
                 <div className="text-center">
@@ -21,10 +22,10 @@ const Vantagens = ({title,description,image}) => {
     )
 }
 
-const Card2 = ({ link, image, title, company }) => {
+const Card2 = ({ link, image, title }) => {
     return (
         <div data-aos="zoom-in" className=' w-[21rem] bg-[#0a1123] p-5 hover:scale-[102%] z-0  transition-all delay-[30ms] ease-in-out'>
-            <a href={link} target='_blank' className='h-[10rem] flex items-center justify-center overflow-hidden bg-green-500 mb-5 '>
+            <a href={link} target='_blank' className='h-[10rem] flex items-center justify-center overflow-hidden bg-[#0a1123] mb-5 '>
                 <img loading='lazy' className='w-auto h-[13rem] bg-cover bg-center ' src={image} alt={title} />
             </a>
             <div className='text-center -mt-1'>
@@ -80,11 +81,58 @@ const EstasticasCard = ({ type, data, icon }) => {
             </div>
             <h3 className='text-3xl font-semibold mt-3'>
                 <CountUp end={data} enableScrollSpy={true} />+
-            </h3>
+            </h3> 
             <p className='text-gray-500 font-medium'>{type}</p>
         </div>
     )
 }
 
+const HeaderServices = ({ title, description, image, local }) => {
+    return (
+    <div className=" lg:max-w-[95%] md:w-[95%] w-[95%] bg-[#0a1123] p-5 py-10 mx-auto flex flex-col md:py-[20] sm:flex-row ">
 
-export { Vantagens, Card2, EventCard, EstasticasCard };
+        <div className="m-2 basis-[60%] px-2 ">
+          
+            <div class="flex items-left justify-left mb-12">
+                <h2 data-aos="fade-right" className='w-3/4 text-left font-extrabold text-transparent lg:text-lg md:text-lg text-lg bg-clip-text bg-gradient-to-r text-white '>{local}</h2>
+            </div>
+           
+            <div className="pr-4 " >
+                <h1 data-aos="fade-right" className='flex justify-left items-left text-left font-extrabold text-transparent lg:text-2xl md:text-2xl text-7xl bg-clip-text bg-gradient-to-r from-sky-500 to-sky-500 '>{title}</h1>
+            </div>
+
+            <div class="w-48 mt-3 h-1 bg-pink-500 "></div>
+            <p>
+                <span></span>
+                <span></span>
+                <div class="flex items-left justify-left mt-6 ">
+                    <h2 data-aos="fade-right" className='w-3/4 text-left font-extrabold text-transparent lg:text-lg md:text-lg text-lg bg-clip-text bg-gradient-to-r text-white '>{description}</h2>
+                </div>
+            </p>
+            <div className="hover:scale-95 duration-1000 ">
+                <Link to="/contato">
+                    <div className='py-3 mt-12 flex justify-left items-left'>
+                        <button className='font-bold bg-emerald-500  border-emerald-500 houver:text-black text-black border hover:bg-teal-100 px-8 py-2 font-medium ease-in transition-all delay-[10ms] '>
+                            <p className='m-2' >
+                                Adquira agora 
+                            </p> 
+                        </button>
+                    </div>
+                </Link>
+            </div>
+        </div>
+
+        <div className=" basis-[40%] sm:px-5 overflow-hidden lg:mt-0 md:mt-0 mt-5 ">
+            <a target='_blank' className='h-[32rem] flex items-left justify-left overflow-hidden mb-5 '>
+                <img loading='lazy' className='w-auto h-[24rem] bg-cover bg-right ' src={image} alt={title} />
+            </a>
+        </div>
+
+    </div>
+    
+    )
+}
+
+
+
+export { Vantagens, Card2, EventCard, EstasticasCard, HeaderServices };

@@ -54,7 +54,7 @@ const BigTech = () => {
             ambiente competitivo.
           </p>
         </div>
-        <div className="m-2 basis-[40%] sm:px-5  py-2 px-2 overflow-hidden  lg:mt-0 md:mt-0 mt-5 " d>
+        <div className="m-2 basis-[40%] sm:px-5  py-2 px-2 overflow-hidden  lg:mt-0 md:mt-0 mt-5 ">
           <img
             src={backgroundImg15}
             className=" w-full hover:scale-105 duration-1000 shadow-xl hue-rotate-30 "

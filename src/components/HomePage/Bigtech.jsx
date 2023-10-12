@@ -6,8 +6,6 @@ import backgroundImg4 from '../../assets/images/google.jpg';
 import backgroundImg5 from '../../assets/images/amazon.jpg'; 
 import backgroundImg6 from '../../assets/images/microsoft.png'; 
 
-
-
 const Bigtech = () => {
   
   return (
