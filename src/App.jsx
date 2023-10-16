@@ -26,7 +26,6 @@ function App() {
           </Layout2>
         } />
 
-
         <Route path="/Serviços" element={
           <Layout>
             <Servico />

@@ -4,6 +4,8 @@ import { BsCheck } from 'react-icons/bs'
 import backgroundImg12 from '../../../assets/images/terra.png' 
 import HeaderAnimation from '../../../components/Globe/HeaderAnimation';
 import SitesCard from "../Cards/SiteCard";
+import { HeaderServices } from "../../../components/Cards/Card";
+import backgroundImg16 from '../../../assets/images/tela2.jpg'
 
 const Sites = () => {
 
@@ -76,25 +78,44 @@ const Sites = () => {
 
     return (
         <div className='pt-16'>
-            <main className="bg-thegray home-no-scroll">
-            <div className="absolute flex justify-center  globe-position">
-                <HeaderAnimation /> 
-            </div>
-            <div className="relative z-10 pt-0 pb-20">
-                <div className="HomeContainer">
-                <div className='pt-16 '>
-                    <div className='flex justify-center items-center'>
-                        <Heading className='flex justify-center items-center' heading="Nossos planos para otimizar o seu negócio" 
-                        description="Soluções de site para você aumentar a eficiência e reduzir custos com atendimento"></Heading>
+            
+            <main className="bg-thegray home-no-scroll ">
+                
+
+                <div className='pt-0'>
+                    <div className="bg-thegray home-no-scroll" id={'position1'}> 
+                        <div className="relative z-10 pt-0 pb-20">
+                            <div className="HomeContainer">
+                                <div className='lg:pt-5 pt-0'>
+                                <HeaderServices  className='flex justify-center items-center' 
+                                local="Home  >  Serviços  > "
+                                local2=" Sites"
+                                title="Desenvolvimento de Sites" 
+                                description="Uma plataforma digital que organiza, apresenta e facilita a compra de produtos de uma empresa, melhorando a visibilidade e acessibilidade dos produtos aos clientes."
+                                image={backgroundImg16}
+                                ></HeaderServices>
+                                
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                    <div className='my-20 flex flex-wrap gap-10 items-center justify-center' id='site_main'>
-                        {sites.map((site, id ) => (
-                            <SitesCard icon={<BsCheck className='text-sky-500' size={30} />} site={site} key={id}/>
-                        ))}
+                </div> 
+
+                <div className="relative z-10 pt-0 pb-20">
+                    <div className="HomeContainer">
+                    <div className='pt-0'>
+                        <div className='flex justify-center items-center'>
+                            <Heading className='flex justify-center items-center' heading="Nossos planos" 
+                            description="Soluções de site para você aumentar a eficiência e reduzir custos"></Heading>
+                        </div>
+                        <div className='my-20 flex flex-wrap gap-10 items-center justify-center' id='site_main'>
+                            {sites.map((site, id ) => (
+                                <SitesCard icon={<BsCheck className='text-sky-500' size={30} />} site={site} key={id}/>
+                            ))}
+                        </div>
+                    </div>
                     </div>
                 </div>
-                </div>
-            </div>
             </main>
         </div>  
     )

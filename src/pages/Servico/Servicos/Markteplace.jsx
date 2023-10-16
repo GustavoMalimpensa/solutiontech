@@ -33,9 +33,7 @@ const Markteplace = () => {
 
     return (
         <div className='pt-16'>
-            
-            <div className="bg-thegray home-no-scroll" id={'position1'}>
-                
+            <div className="bg-thegray home-no-scroll" id={'position1'}> 
                 <div className="relative z-10 pt-0 pb-20">
                 <div className="HomeContainer">
                     <div className='lg:pt-5 pt-0'>
@@ -49,14 +47,9 @@ const Markteplace = () => {
                     
                     </div>
                 </div>
-                
                 </div>
             </div>
-
-            
         </div> 
-
-
         
     )
 

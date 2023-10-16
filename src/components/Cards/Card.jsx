@@ -90,7 +90,7 @@ const EstasticasCard = ({ type, data, icon }) => {
 const HeaderServices = ({ title, description, image, local, local2 }) => {
     return (
 
-    <div>
+    <div className=''>
 
         <div className=" lg:max-w-[95%] w-[95%] bg-[#0a1123] mx-auto flex flex-col md:py-[20] sm:flex-row ">
 
@@ -98,7 +98,7 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
                 {/* Oculta a imagem em telas pequenas */}
                 <div className="hidden sm:block">
                     <a target='_blank' className='flex items-center justify-center md:mt-5 mt-5'>
-                    <img loading='lazy' className='w-auto lg:h-[27rem] h-[15rem] bg-cover bg-center ' src={image} alt={title} />
+                    <img loading='lazy' className='w-auto lg:h-[23rem] h-[15rem] bg-cover bg-center ' src={image} alt={title} />
                     </a>
                 </div>
             </div>
@@ -112,7 +112,7 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
 
             <div  data-aos="fade-right" className="m-2 basis-[50%] px-2 ">
             
-                <div class="flex items-left justify-left mt-7 ">
+                <div class="flex items-left justify-left mt-4 ">
                     <h2  className='w-3/4 text-left font-extrabold text-transparent lg:text-sm md:text-sm text-sm bg-clip-text bg-gradient-to-r text-white '>{local}</h2>
                 </div>
 
@@ -132,7 +132,7 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
                 
                 <div className="hover:scale-95 duration-1000 ">
                     <Link to="/contato">
-                        <div className='py-3 mt-6 flex justify-left items-left '>
+                        <div className='py-3 mt-5 pb-5 flex justify-left items-left '>
                             <button className='font-bold bg-emerald-500  border-emerald-500 houver:text-black text-black border hover:bg-teal-100 px-8 py-2 font-medium ease-in transition-all delay-[10ms] '>
                                 <p className='m-2' >
                                     Adquira agora 
@@ -144,9 +144,6 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
             </div>
 
         </div>
-
-       
-
     </div>
     
     )
