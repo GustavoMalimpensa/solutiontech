@@ -80,8 +80,6 @@ const Sites = () => {
         <div className='pt-16'>
             
             <main className="bg-thegray home-no-scroll ">
-                
-
                 <div className='pt-0'>
                     <div className="bg-thegray home-no-scroll" id={'position1'}> 
                         <div className="relative z-10 pt-0 pb-20">

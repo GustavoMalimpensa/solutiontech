@@ -90,7 +90,7 @@ const EstasticasCard = ({ type, data, icon }) => {
 const HeaderServices = ({ title, description, image, local, local2 }) => {
     return (
 
-    <div className=''>
+    <div c>
 
         <div className=" lg:max-w-[95%] w-[95%] bg-[#0a1123] mx-auto flex flex-col md:py-[20] sm:flex-row ">
 
@@ -98,7 +98,7 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
                 {/* Oculta a imagem em telas pequenas */}
                 <div className="hidden sm:block">
                     <a target='_blank' className='flex items-center justify-center md:mt-5 mt-5'>
-                    <img loading='lazy' className='w-auto lg:h-[23rem] h-[15rem] bg-cover bg-center ' src={image} alt={title} />
+                    <img loading='lazy' className='w-auto lg:h-[20rem] h-[15rem] bg-cover bg-center ' src={image} alt={title} />
                     </a>
                 </div>
             </div>
