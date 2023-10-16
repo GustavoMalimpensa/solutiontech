@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImg16 from '../../../assets/images/tela.jpg'
+import backgroundImg16 from '../../../assets/images/tela2.jpg'
 import { HeaderServices } from "../../../components/Cards/Card";
 
 const Markteplace = () => {
