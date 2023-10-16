@@ -38,7 +38,7 @@ const Markteplace = () => {
                 
                 <div className="relative z-10 pt-0 pb-20">
                 <div className="HomeContainer">
-                    <div className='pt-5'>
+                    <div className='lg:pt-5 pt-0'>
                     <HeaderServices  className='flex justify-center items-center' 
                     local="Home  >  Serviços  > "
                     local2=" Marketplace"
