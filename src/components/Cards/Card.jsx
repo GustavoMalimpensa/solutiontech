@@ -92,7 +92,7 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
 
     <div>
 
-        <div className=" lg:max-w-[95%] w-[95%] bg-[#0a1123] mx-auto flex flex-col md:py-[20] sm:flex-row z-10">
+        <div className=" lg:max-w-[95%] w-[95%] bg-[#0a1123] mx-auto flex flex-col md:py-[20] sm:flex-row ">
 
             <div className="basis-[50%] sm:px-5 overflow-hidden pb-5">
                 {/* Oculta a imagem em telas pequenas */}
@@ -102,6 +102,13 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
                     </a>
                 </div>
             </div>
+
+            <div className="sm:hidden absolute inset-0 z-0">
+                <a target='_blank' className='flex items-center justify-center h-screen overflow-hidden'>
+                    <img loading='lazy' className='w-auto h-full object-cover blur-sm brightness-50' src={image} alt={title} />
+                </a>
+            </div>
+
 
             <div  data-aos="fade-right" className="m-2 basis-[50%] px-2 ">
             
@@ -138,11 +145,7 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
 
         </div>
 
-        <div className="sm:hidden inset-0 z-0 top-0">
-            <a target='_blank' className='flex items-center justify-center h-screen overflow-hidden'>
-                <img loading='lazy' className='w-auto h-full object-cover blur-sm' src={image} alt={title} />
-            </a>
-        </div>
+       
 
     </div>
     
