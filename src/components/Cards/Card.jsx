@@ -1,6 +1,6 @@
-import React from 'react'
 import CountUp from 'react-countup';
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-scroll';
 
 const Vantagens = ({title,description,image}) => {
     return (
@@ -132,6 +132,9 @@ const HeaderServices = ({ title, description, image, local }) => {
     
     )
 }
+
+
+
 
 
 

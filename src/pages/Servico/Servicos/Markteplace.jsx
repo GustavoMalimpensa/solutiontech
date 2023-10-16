@@ -1,6 +1,7 @@
 import React from "react";
 import backgroundImg16 from '../../../assets/images/tela.jpg'
 import { HeaderServices } from "../../../components/Cards/Card";
+import NavbarSecundaria from "../../../components/Cards/NavbarSecundaria";
 
 const Markteplace = () => {
 
@@ -34,23 +35,32 @@ const Markteplace = () => {
     return (
         <div className='pt-16'>
             
-        <main className="bg-thegray home-no-scroll">
-            
-            <div className="relative z-10 pt-0 pb-20">
-            <div className="HomeContainer">
-                <div className='pt-9'>
-                <HeaderServices  className='flex justify-center items-center' 
-                local="Home  >  Serviços  >  Marketplace>"
-                title="Desenvolvimento de Marketplace" 
-                description="Tenha uma solução digital unificada para sua empresa, onde seus clientes interajam de forma rápida e dinâmica na busca de informações. Integre seus sistemas internos em um único Site ou Portal Corporativo com a ajuda da Attri. Contamos com vários cases de sucesso e podemos auxiliar na melhor solução para seu negócio. Somos a empresa de desenvolvimento de sites líder no mercado."
-                image={backgroundImg16}
-                ></HeaderServices>
+            <div className="bg-thegray home-no-scroll" id={'position1'}>
+                
+                <div className="relative z-10 pt-0 pb-20">
+                <div className="HomeContainer">
+                    <div className='pt-9'>
+                    <HeaderServices  className='flex justify-center items-center' 
+                    local="Home  >  Serviços  >  Marketplace>"
+                    title="Desenvolvimento de Marketplace" 
+                    description="Tenha uma solução digital unificada para sua empresa, onde seus clientes interajam de forma rápida e dinâmica na busca de informações. Integre seus sistemas internos em um único Site ou Portal Corporativo com a ajuda da Attri. Contamos com vários cases de sucesso e podemos auxiliar na melhor solução para seu negócio. Somos a empresa de desenvolvimento de sites líder no mercado."
+                    image={backgroundImg16}
+                    ></HeaderServices>
+                    
+                    </div>
+                </div>
                 
                 </div>
             </div>
+
+            <div id="secao2">
+                <NavbarSecundaria />
             </div>
-        </main>
+            
         </div> 
+
+
+        
     )
 
 }

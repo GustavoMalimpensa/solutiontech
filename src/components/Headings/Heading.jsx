@@ -13,4 +13,3 @@ const Heading = ({ heading, description }) => {
 
 export default Heading
 
-
