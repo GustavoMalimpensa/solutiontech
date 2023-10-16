@@ -15,8 +15,8 @@ const Otimizacao = () => {
                 <HeaderServices  className='flex justify-center items-center' 
                 local="Home  >  Serviços  > "
                 local2=" Otimização SEO"
-                title="Otimização SEO " 
-                description="Imagine o seu site como uma loja em uma rua movimentada. A otimização de site é como tornar essa loja mais visível e atraente para as pessoas que passam por ela."
+                title="Aumentando Sua Visibilidade Online" 
+                description=" Otimização SEO que vai muito além de simplesmente melhorar o ranking do seu site nos mecanismos de busca. Nosso enfoque é impulsionar sua presença online e atrair tráfego qualificado que se converte em resultados reais."
                 image={backgroundImg16}
                 ></HeaderServices>
                 

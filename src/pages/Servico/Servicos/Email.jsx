@@ -15,8 +15,8 @@ const Email = () => {
                     <HeaderServices  className='flex justify-center items-center' 
                     local="Home  >  Serviços  > "
                     local2=" E-mail"
-                    title="E-mail Corporativo" 
-                    description="Proporcionamos comunicações profissionais e seguras, fortalecendo sua imagem de marca e protegendo suas mensagens."
+                    title="Gestão de E-mail Empresarial" 
+                    description="Entendemos a importância das comunicações empresariais eficazes. É por isso que oferecemos um serviço de Gerenciamento de E-mail Corporativo que simplifica e aprimora a forma como sua empresa se comunica."
                     image={backgroundImg16}
                     ></HeaderServices>
                     

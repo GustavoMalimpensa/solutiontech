@@ -2,7 +2,6 @@ import React from "react";
 import Heading from '../../../components/Headings/Heading'
 import { BsCheck } from 'react-icons/bs'
 import backgroundImg12 from '../../../assets/images/terra.png' 
-import HeaderAnimation from '../../../components/Globe/HeaderAnimation';
 import SitesCard from "../Cards/SiteCard";
 import { HeaderServices } from "../../../components/Cards/Card";
 import backgroundImg16 from '../../../assets/images/tela2.jpg'
@@ -89,7 +88,7 @@ const Sites = () => {
                                 local="Home  >  Serviços  > "
                                 local2=" Sites"
                                 title="Desenvolvimento de Sites" 
-                                description="Uma plataforma digital que organiza, apresenta e facilita a compra de produtos de uma empresa, melhorando a visibilidade e acessibilidade dos produtos aos clientes."
+                                description="Uma plataforma digital que organiza, apresenta e facilita a compra de produtos de uma empresa, melhorando a visibilidade e acessibilidade dos produtos aos clientes. Essencial para acompanhar os indicadores da sua empresa."
                                 image={backgroundImg16}
                                 ></HeaderServices>
                                 

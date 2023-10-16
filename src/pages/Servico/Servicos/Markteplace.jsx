@@ -41,7 +41,7 @@ const Markteplace = () => {
                     local="Home  >  Serviços  > "
                     local2=" Marketplace"
                     title="Desenvolvimento de Marketplace" 
-                    description="Tenha uma solução digital unificada para sua empresa, onde seus clientes interajam de forma rápida e dinâmica na busca de informações. Podemos auxiliar na melhor solução para seu negócio. Somos a empresa de desenvolvimento de sites líder no mercado."
+                    description="Ajudamos empresas a expandir seus horizontes e alcançar um público mais amplo do que nunca. Se você deseja criar uma plataforma de negócios tudo-em-um que una compradores e vendedores."
                     image={backgroundImg16}
                     ></HeaderServices>
                     

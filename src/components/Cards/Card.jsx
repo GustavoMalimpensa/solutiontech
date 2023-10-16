@@ -98,7 +98,7 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
                 {/* Oculta a imagem em telas pequenas */}
                 <div className="hidden sm:block">
                     <a target='_blank' className='flex items-center justify-center md:mt-5 mt-5'>
-                    <img loading='lazy' className='w-auto lg:h-[20rem] h-[15rem] bg-cover bg-center ' src={image} alt={title} />
+                    <img loading='lazy' className='w-auto lg:h-[25rem] h-[15rem] bg-cover bg-center ' src={image} alt={title} />
                     </a>
                 </div>
             </div>
@@ -132,7 +132,7 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
                 
                 <div className="hover:scale-95 duration-1000 ">
                     <Link to="/contato">
-                        <div className='py-3 mt-5 pb-5 flex justify-left items-left '>
+                        <div className='py-3 mt-6 pb-6 flex justify-left items-left '>
                             <button className='font-bold bg-emerald-500  border-emerald-500 houver:text-black text-black border hover:bg-teal-100 px-8 py-2 font-medium ease-in transition-all delay-[10ms] '>
                                 <p className='m-2' >
                                     Adquira agora 

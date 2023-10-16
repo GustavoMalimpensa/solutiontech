@@ -15,8 +15,8 @@ const Datascience = () => {
                 <HeaderServices  className='flex justify-center items-center' 
                 local="Home  >  Serviços  > "
                 local2="Data Science"
-                title="Data Science " 
-                description="Data Science, ou Ciência de Dados, é como ter um detetive para desvendar segredos valiosos escondidos nos dados da sua empresa.  Isso ajuda sua empresa a tomar decisões mais inteligentes, melhorar a eficiência e se manter à frente da concorrência.
+                title="Análise de Dados Inteligente" 
+                description="Data Science, ou Ciência de Dados, é como ter um detetive para desvendar segredos valiosos escondidos nos dados da sua empresa. Isso ajuda sua empresa a tomar decisões mais inteligentes e se manter à frente da concorrência.
                 "
                 image={backgroundImg16}
                 ></HeaderServices>

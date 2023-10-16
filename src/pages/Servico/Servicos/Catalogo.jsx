@@ -4,6 +4,8 @@ import { BsCheck } from 'react-icons/bs'
 import backgroundImg13 from '../../../assets/images/lista.png'
 import HeaderAnimation from '../../../components/Globe/HeaderAnimation';
 import CatalogoCard from "../Cards/CatalogoCard";
+import { HeaderServices } from "../../../components/Cards/Card";
+import backgroundImg16 from '../../../assets/images/tela2.jpg'
 
 const Catalogo = () => {
 
@@ -55,6 +57,24 @@ const Catalogo = () => {
 
     return (
     <div className='pt-16'>
+        
+      <div className="bg-thegray home-no-scroll" id={'position1'}> 
+          <div className="relative z-10 pt-0 pb-20">
+              <div className="HomeContainer">
+                  <div className='lg:pt-5 pt-0'>
+                  <HeaderServices  className='flex justify-center items-center' 
+                  local="Home  >  Serviços  > "
+                  local2=" Catálogo"
+                  title="Desenvolvimento de Catálogos" 
+                  description=" Para ajudar o seu negócio a destacar-se e impressionar seus clientes. Nossos catálogos não são apenas uma coleção de produtos; são uma vitrine cuidadosamente elaborada que cativa, informa e conduz os clientes à ação."
+                  image={backgroundImg16}
+                  ></HeaderServices>
+                  
+              </div>
+          </div>
+          </div>
+      </div>
+
       <main className="bg-thegray home-no-scroll">
         <div className="absolute flex justify-center  globe-position">
             <HeaderAnimation /> 
@@ -62,7 +82,7 @@ const Catalogo = () => {
         <div className="relative z-10 pt-0 pb-20">
           <div className="HomeContainer">
             <div className='pt-16'>
-              <Heading  className='flex justify-center items-center' heading="Nossos planos para otimizar o seu negócio" 
+              <Heading  className='flex justify-center items-center' heading="Nossos Planos" 
               description="Soluções de cátalogo para você aumentar a eficiência e reduzir custos com atendimento"></Heading>
               <div className='my-20 mx-5 flex flex-wrap gap-10 items-center justify-center' id='catalogo_main'>
                 {catalogos.map((catalogo, id ) => (
