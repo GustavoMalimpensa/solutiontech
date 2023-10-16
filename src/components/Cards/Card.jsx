@@ -1,6 +1,5 @@
 import CountUp from 'react-countup';
 import React from 'react';
-import { Link } from 'react-scroll';
 
 const Vantagens = ({title,description,image}) => {
     return (
@@ -130,17 +129,19 @@ const HeaderServices = ({ title, description, image, local, local2 }) => {
                     <h2 data-aos="fade-right" className='lg:w-4/5 w-full text-left font-extrabold text-transparent lg:text-base md:text-base text-base bg-clip-text bg-gradient-to-r text-white '>{description}</h2>
                 </div>
                 
-                <div className="hover:scale-95 duration-1000 ">
-                    <Link to="/contato">
+                <div className="hover:scale-95 duration-1000">
+                    <a href="https://wa.me/5519999372133" target="_blank">
                         <div className='py-3 mt-6 pb-6 flex justify-left items-left '>
-                            <button className='font-bold bg-emerald-500  border-emerald-500 houver:text-black text-black border hover:bg-teal-100 px-8 py-2 font-medium ease-in transition-all delay-[10ms] '>
-                                <p className='m-2' >
-                                    Adquira agora 
-                                </p> 
+                            <button className='font-bold bg-emerald-500  border-emerald-500 hover:text-black text-black border hover-bg-teal-100 px-8 py-2 font-medium ease-in transition-all delay-[10ms]'>
+                                <p className='m-2'>
+                                    Adquira agora
+                                </p>
                             </button>
                         </div>
-                    </Link>
+                    </a>
                 </div>
+
+
             </div>
 
         </div>
