@@ -1,7 +1,6 @@
 import React from "react";
 import backgroundImg16 from '../../../assets/images/tela.jpg'
 import { HeaderServices } from "../../../components/Cards/Card";
-import NavbarSecundaria from "../../../components/Cards/NavbarSecundaria";
 
 const Markteplace = () => {
 
@@ -39,11 +38,12 @@ const Markteplace = () => {
                 
                 <div className="relative z-10 pt-0 pb-20">
                 <div className="HomeContainer">
-                    <div className='pt-9'>
+                    <div className='pt-5'>
                     <HeaderServices  className='flex justify-center items-center' 
-                    local="Home  >  Serviços  >  Marketplace>"
+                    local="Home  >  Serviços  > "
+                    local2=" Marketplace"
                     title="Desenvolvimento de Marketplace" 
-                    description="Tenha uma solução digital unificada para sua empresa, onde seus clientes interajam de forma rápida e dinâmica na busca de informações. Integre seus sistemas internos em um único Site ou Portal Corporativo com a ajuda da Attri. Contamos com vários cases de sucesso e podemos auxiliar na melhor solução para seu negócio. Somos a empresa de desenvolvimento de sites líder no mercado."
+                    description="Tenha uma solução digital unificada para sua empresa, onde seus clientes interajam de forma rápida e dinâmica na busca de informações. Podemos auxiliar na melhor solução para seu negócio. Somos a empresa de desenvolvimento de sites líder no mercado."
                     image={backgroundImg16}
                     ></HeaderServices>
                     
@@ -53,9 +53,6 @@ const Markteplace = () => {
                 </div>
             </div>
 
-            <div id="secao2">
-                <NavbarSecundaria />
-            </div>
             
         </div> 
 

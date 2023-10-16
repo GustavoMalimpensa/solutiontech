@@ -9,8 +9,7 @@ const Heading1 = ({ text1, text2, details }) => {
             </h1>
             <p className='text-white text-center mt-4'>
             {details}
-            </p>
-            
+            </p>  
         </div>
     )
 }

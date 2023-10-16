@@ -87,31 +87,39 @@ const EstasticasCard = ({ type, data, icon }) => {
     )
 }
 
-const HeaderServices = ({ title, description, image, local }) => {
+const HeaderServices = ({ title, description, image, local, local2 }) => {
     return (
-    <div className=" lg:max-w-[95%] md:w-[95%] w-[95%] bg-[#0a1123] p-5 py-10 mx-auto flex flex-col md:py-[20] sm:flex-row ">
+    <div className=" lg:max-w-[95%] md:w-[95%] w-[95%] bg-[#0a1123]  mx-auto flex flex-col md:py-[20] sm:flex-row ">
 
-        <div className="m-2 basis-[60%] px-2 ">
-          
-            <div class="flex items-left justify-left mb-12">
-                <h2 data-aos="fade-right" className='w-3/4 text-left font-extrabold text-transparent lg:text-lg md:text-lg text-lg bg-clip-text bg-gradient-to-r text-white '>{local}</h2>
+        <div className=" basis-[50%] sm:px-5 overflow-hidden pb-5">
+            <a target='_blank' className='flex items-center justify-center overflow-hidden md:mt-5 mt-5'>
+                <img loading='lazy' className='w-auto lg:h-[30rem] h-[15rem] bg-cover bg-center ' src={image} alt={title} />
+            </a>
+        </div>
+
+        <div  data-aos="fade-right" className="m-2 basis-[50%] px-2 ">
+        
+            <div class="flex items-left justify-left mt-7 ">
+                <h2  className='w-3/4 text-left font-extrabold text-transparent lg:text-sm md:text-sm text-sm bg-clip-text bg-gradient-to-r text-white '>{local}</h2>
+            </div>
+
+            <div class="flex items-left justify-left mb-7">
+                <h2  className='w-3/4 text-left font-extrabold text-transparent lg:text-sm md:text-sm text-sm bg-clip-text bg-gradient-to-r from-sky-500 to-sky-500 '>{local2}</h2>
             </div>
            
-            <div className="pr-4 " >
-                <h1 data-aos="fade-right" className='flex justify-left items-left text-left font-extrabold text-transparent lg:text-2xl md:text-2xl text-7xl bg-clip-text bg-gradient-to-r from-sky-500 to-sky-500 '>{title}</h1>
+            <div className="pr-4 flex justify-left items-left text-left" >
+                <h1  className='font-extrabold lg:text-5xl md:text-3xl text-3xl text-sky-500 '>{title}</h1>
             </div>
 
             <div class="w-48 mt-3 h-1 bg-pink-500 "></div>
-            <p>
-                <span></span>
-                <span></span>
-                <div class="flex items-left justify-left mt-6 ">
-                    <h2 data-aos="fade-right" className='w-3/4 text-left font-extrabold text-transparent lg:text-lg md:text-lg text-lg bg-clip-text bg-gradient-to-r text-white '>{description}</h2>
-                </div>
-            </p>
+         
+            <div class="flex items-left justify-left mt-5 ">
+                <h2 data-aos="fade-right" className='lg:w-4/5 w-full text-left font-extrabold text-transparent lg:text-base md:text-base text-base bg-clip-text bg-gradient-to-r text-white '>{description}</h2>
+            </div>
+            
             <div className="hover:scale-95 duration-1000 ">
                 <Link to="/contato">
-                    <div className='py-3 mt-12 flex justify-left items-left'>
+                    <div className='py-3 mt-8 flex justify-left items-left '>
                         <button className='font-bold bg-emerald-500  border-emerald-500 houver:text-black text-black border hover:bg-teal-100 px-8 py-2 font-medium ease-in transition-all delay-[10ms] '>
                             <p className='m-2' >
                                 Adquira agora 
@@ -121,12 +129,8 @@ const HeaderServices = ({ title, description, image, local }) => {
                 </Link>
             </div>
         </div>
-
-        <div className=" basis-[40%] sm:px-5 overflow-hidden lg:mt-0 md:mt-0 mt-5 ">
-            <a target='_blank' className='h-[32rem] flex items-left justify-left overflow-hidden mb-5 '>
-                <img loading='lazy' className='w-auto h-[24rem] bg-cover bg-right ' src={image} alt={title} />
-            </a>
-        </div>
+        
+        
 
     </div>
     
