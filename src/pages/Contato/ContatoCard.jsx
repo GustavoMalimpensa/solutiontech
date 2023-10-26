@@ -9,7 +9,6 @@ const ContatoCard = ({ title,description }) => {
     };
 
     return (             
-        
     <div data-aos="zoom-in" className='w-fit '>
         <div className='border-[1px] border-gray-800 hover:border-gray-700 w-[21rem] p-5 hover:scale-[102%] z-0 hover:z-10 bg-[#0a1123] transition-all delay-[30ms] ease-in-out'>
             <div data-aos="fade-up" className='w-[100%] md:w-[100%] lg:w-[100%] order-3 md:order-3 lg:order-3 text-base  pt-8'>

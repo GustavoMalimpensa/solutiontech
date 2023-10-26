@@ -19,8 +19,7 @@ const Consultoria = () => {
                     title="Transforme Ideias em Negócios" 
                     description="Acreditamos que a tecnologia é a chave para transformar ideias inovadoras em negócios de sucesso. Se você tem uma visão única e deseja transformá-la em realidade, nossa equipe de consultores de T.I. está pronta para ajudar."
                     image={backgroundImg16}
-                    ></HeaderServices>
-                    
+                    ></HeaderServices>    
                     </div>
                 </div>
                 </div>

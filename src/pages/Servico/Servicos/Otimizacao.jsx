@@ -18,8 +18,7 @@ const Otimizacao = () => {
                 title="Aumentando Sua Visibilidade Online" 
                 description=" Otimização SEO que vai muito além de simplesmente melhorar o ranking do seu site nos mecanismos de busca. Nosso enfoque é impulsionar sua presença online e atrair tráfego qualificado que se converte em resultados reais."
                 image={backgroundImg16}
-                ></HeaderServices>
-                
+                ></HeaderServices> 
                 </div>
             </div>
             </div>

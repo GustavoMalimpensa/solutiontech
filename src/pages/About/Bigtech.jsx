@@ -4,15 +4,16 @@ import backgroundImg16 from '../../assets/images/amazon.jpg';
 import backgroundImg17 from '../../assets/images/microsoft.png'; 
 
 const BigTech = () => {
+  
   document.title = "Solucion Tech | Big Techs";
 
   return (
     <div className="pt-16 min-h-screen" >
-      <div className=" m-10 lg:max-w-[80%] md:w-[85%] w-[94%] bg-[#0a1123] p-5 py-10 mx-auto flex flex-col md:py-[20]   sm:flex-row  " >
+      <div className=" m-10 lg:max-w-[80%] md:w-[85%] w-[94%] bg-[#0a1123] p-5 py-10 mx-auto flex flex-col md:py-[20] sm:flex-row  " >
         <div className="basis-[60%] px-2 hover:scale-95 duration-1000 ">
           <Heading heading="O que são ?"></Heading>
           <div class="w-48 mb-5 mt-1 h-1 bg-pink-500 "></div>
-          <p  >
+          <p>
             <span></span>
             <span></span>
             Big Techs são as grandes empresas de tecnologia que dominam o mercado. Majoritariamente localizadas no Vale do Silício,
@@ -41,7 +42,7 @@ const BigTech = () => {
         <div className="m-2 basis-[60%] px-2 hover:scale-95 duration-1000 ">
           <h2 className=" text-4xl px-2 back animate-bounce  ">Google</h2>
           <div class="w-48 mb-5 mt-1 h-1 bg-pink-500 "></div>
-          <p  >
+          <p >
             <span></span>
             <span></span>
             O Google oferece ferramentas essenciais para empresas fortalecerem sua presença online.
@@ -57,18 +58,18 @@ const BigTech = () => {
         <div className="m-2 basis-[40%] sm:px-5  py-2 px-2 overflow-hidden  lg:mt-0 md:mt-0 mt-5 ">
           <img
             src={backgroundImg15}
-            className=" w-full hover:scale-105 duration-1000 shadow-xl hue-rotate-30 "
+            className="w-full hover:scale-105 duration-1000 shadow-xl hue-rotate-30 "
           ></img>
         </div>
       </div>
 
-      <div className=" m-10 lg:max-w-[80%] md:w-[85%] w-[94%] bg-[#0a1123] p-5 py-10 mx-auto flex flex-col md:py-[80]   sm:flex-row   ">
+      <div className="m-10 lg:max-w-[80%] md:w-[85%] w-[94%] bg-[#0a1123] p-5 py-10 mx-auto flex flex-col md:py-[80]   sm:flex-row   ">
         
 
         <div className="m-2 basis-[60%] px-2 hover:scale-95 duration-1000 ">
-          <h2 className=" text-4xl px-2 back animate-bounce  ">Amazon</h2>
+          <h2 className="text-4xl px-2 back animate-bounce  ">Amazon</h2>
           <div class="w-24 mb-5 mt-1 h-1 bg-pink-500 "></div>
-          <p  >
+          <p>
           A Amazon oferece diversas ferramentas e serviços para impulsionar as empresas. 
           O Amazon Marketplace permite aos vendedores listar e vender produtos diretamente na
           plataforma, alcançando uma grande base de clientes. O Fulfillment by Amazon (FBA) 
@@ -77,7 +78,7 @@ const BigTech = () => {
           exibindo anúncios em locais estratégicos para aumentar a visibilidade e as chances
           de venda. Em resumo, essas ferramentas facilitam a venda, ampliam o alcance, 
           simplificam a logística e melhoram o retorno sobre o investimento em publicidade.
-           </p>
+          </p>
         </div>
 
         <div className="m-2 basis-[40%] sm:px-5  py-2 px-2 overflow-hidden  lg:mb-0 md:mb-0 mb-10  ">
@@ -90,9 +91,9 @@ const BigTech = () => {
 
       <div className=" m-10 lg:max-w-[80%] md:w-[85%] w-[94%] bg-[#0a1123]  p-5 py-10 mx-auto flex flex-col md:py-[80]   sm:flex-row  ">
         <div className="m-2 basis-[60%] px-2 hover:scale-95 duration-1000 ">
-          <h2 className=" text-4xl px-2 back animate-bounce  ">Microsoft</h2>
+          <h2 className=" text-4xl px-2 back animate-bounce ">Microsoft</h2>
           <div class="w-40 mb-5 mt-1 h-1 bg-pink-500 "></div>
-          <p  >        
+          <p >        
             A Microsoft oferece ferramentas e serviços abrangentes para empresas,
             focados na produtividade, gestão de dados e processos empresariais.
             O Microsoft Office 365 inclui programas essenciais como Word, Excel
@@ -113,7 +114,6 @@ const BigTech = () => {
           ></img>
         </div>
       </div>
-
     </div>
   );
 };

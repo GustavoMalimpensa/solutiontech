@@ -19,7 +19,6 @@ const Email = () => {
                     description="Entendemos a importância das comunicações empresariais eficazes. É por isso que oferecemos um serviço de Gerenciamento de E-mail Corporativo que simplifica e aprimora a forma como sua empresa se comunica."
                     image={backgroundImg16}
                     ></HeaderServices>
-                    
                     </div>
                 </div>
                 </div>

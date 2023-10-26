@@ -20,7 +20,6 @@ const Datascience = () => {
                 "
                 image={backgroundImg16}
                 ></HeaderServices>
-                
                 </div>
             </div>
             </div>

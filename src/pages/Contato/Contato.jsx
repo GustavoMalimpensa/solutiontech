@@ -8,13 +8,13 @@ const Contatos = () => {
   const ContatoData = [
     {
       id: "0",
-      title: "A mudança está a um click ",
+      title: "A mudança está a um click",
       description: "Entre em contato através das nossas redes sociais ou envie uma mensagem para tirar suas dúvidas.",
     },
   ];
 
   return (
-    <div className="pt-16 relative " >
+    <div className="pt-16 relative" >
       <img data-aos="fade-up" className="absolute inset-0 w-full h-full object-cover" src={backgroundImg10} alt="Imagem de fundo"/>
       <div className='my-10 flex flex-wrap gap-10 items-center justify-center '>
         {ContatoData.map((data) => (

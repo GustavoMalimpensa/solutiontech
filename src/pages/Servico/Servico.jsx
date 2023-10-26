@@ -111,7 +111,6 @@ const Servico = () => {
             <HeaderAnimation /> 
         </div>
         <div className="relative z-10 pt-0 pb-20">
-          {/*Main content / Hero section */}
           <div className="HomeContainer">
             <div className='pt-16'>
               <Heading  className='flex justify-center items-center' heading="O que podemos fazer por você?" 
