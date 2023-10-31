@@ -30,18 +30,6 @@ const Servico = () => {
       id: "0"
     },
     {
-      name: 'Cátalogo de Produtos',
-      image: backgroundImg13,
-      about: "Uma plataforma digital que organiza, apresenta e facilita a compra de produtos de uma empresa, melhorando a visibilidade e acessibilidade dos produtos aos clientes.", 
-      value: "/Serviços-catalogo",
-      icon1: "Apresentação Visual",
-      icon2: "Facilidade de Pesquisa",
-      icon3: "Preços e Disponibilidade",
-      icon4: "Organização",
-      icon5: "Otimização",
-      id: "1"
-    },
-    {
       name: 'Data Science',
       image: backgroundImg14,
       about: "Um campo que utiliza técnicas e algoritmos para coletar, analisar e interpretar grandes volumes de dados, fornecendo insights valiosos e tomadas de decisões.", 
@@ -78,7 +66,7 @@ const Servico = () => {
       id: "5"
     },
     {
-      name: 'Consultoria em T.I',
+      name: 'Outsourcing TI',
       image: backgroundImg17,
       about: "Estamos aqui para ajudá-lo a lidar com o mundo da tecnologia que as vezes parece muito complicado. Vamos descomplicar, deixe com a gente!", 
       value: "/Serviços-consultoria",
@@ -88,18 +76,6 @@ const Servico = () => {
       icon4: "Consultoria de Sistemas",
       icon5: "Para Pequenas Empresas",
       id: "6"
-    },
-    {
-      name: 'Marketplace',
-      image: backgroundImg18,
-      about: "Com o nosso serviço, você estará pronto para conquistar o mundo do comércio eletrônico e impulsionar o crescimento do seu negócio", 
-      value: "/Serviços-markteplace",
-      icon1: "Soluções Personalizadas",
-      icon2: "Design Intuitivo",
-      icon3: "Funcionalidades Avançadas",
-      icon4: "Escalabilidade",
-      icon5: "Segurança e Confiabilidade",
-      id: "7"
     }
     
   ]
